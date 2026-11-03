@@ -5,6 +5,9 @@
      <meta name="viewport" content="width=device-width, initial-scale=1" />
      <title>Free d100</title>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+
+     <!-- Dark mode: dark palette + toggle button styles (loaded after the theme) -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-dark-mode-toggle@1.0.2/index.css">
    </head>
    <body>
      <div id="app"></div>
@@ -13,9 +16,13 @@
          name: 'Free d100',
          loadSidebar: true,
          subMaxLevel: 2,
-         homepage: 'index.md'
+         homepage: 'index.md',
+         themeController: true   // Docsify 5 native theme picker (light + dark built in)
        }
      </script>
      <script src="https://cdn.jsdelivr.net/npm/docsify@5/lib/docsify.min.js"></script>
+
+     <!-- Dark mode toggle plugin — must load after the docsify core -->
+     <script src="https://cdn.jsdelivr.net/npm/docsify-dark-mode-toggle@1.0.2/index.js"></script>
    </body>
    </html>
