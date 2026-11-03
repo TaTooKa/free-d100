@@ -4,7 +4,7 @@
 
 Roll d% equal or under the **Probability %** (but as high as possible to get more SLs).
 
-The Probability % is usually determined by your **Skill %** (and other circumstantial ±% modifiers).
+The Probability % is determined by your **Skill %** (and other circumstantial ±% modifiers).
 
 > [!NOTE]
 > results between 00-99; Probability % can never be < 1% or > 97%.

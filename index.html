@@ -26,7 +26,22 @@
       display: none !important;
     }
 
-
+    /* Dark mode only: #theme-dark has no `disabled` attribute when dark is active */
+    :root:has(#theme-dark:not([disabled])) {
+      --color-bg: #18181a;
+      /* page + content */
+      --sidebar-bg: #18181a;
+      /* sidebar panel */
+      --code-bg: #060d2b;
+      /* inline code */
+      --codeblock-bg: #060d2b;
+      /* fenced blocks */
+      --table-row-alt-bg: #0a1330;
+      /* zebra rows */
+      --sidebar-toggle-bg: rgba(1, 5, 25, .8);
+      --border-color: rgba(255, 255, 255, .12);
+      --sidebar-border-color: rgba(255, 255, 255, .12);
+    }
   </style>
 
 </head>
@@ -46,10 +61,10 @@
             name: 'default',
             light: null,          // null => toggle the #theme-vue / #theme-dark <link>s
             dark: null,
-            lightColor: '#ffffff',
-            darkColor: '#3f3f3f',
-            lightThemeColor: '#42b883',
-            darkThemeColor: '#42b883'   // keep the accent the same in both modes
+            lightColor: '#ffffff',   // only used by the (hidden) theme-picker swatch
+            darkColor: '#18181a',
+            lightThemeColor: '#0284c7',
+            darkThemeColor: '#7dd3fc'
           }
         ]
       }
