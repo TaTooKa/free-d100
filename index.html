@@ -1,28 +1,69 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <title>Free d100</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+<!DOCTYPE html>
+<html lang="en">
 
-     <!-- Dark mode: dark palette + toggle button styles (loaded after the theme) -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-dark-mode-toggle@1.0.2/index.css">
-   </head>
-   <body>
-     <div id="app"></div>
-     <script>
-       window.$docsify = {
-         name: 'Free d100',
-         loadSidebar: true,
-         subMaxLevel: 2,
-         homepage: 'index.md',
-         themeController: true   // Docsify 5 native theme picker (light + dark built in)
-       }
-     </script>
-     <script src="https://cdn.jsdelivr.net/npm/docsify@5/lib/docsify.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free d100</title>
 
-     <!-- Dark mode toggle plugin — must load after the docsify core -->
-     <script src="https://cdn.jsdelivr.net/npm/docsify-dark-mode-toggle@1.0.2/index.js"></script>
-   </body>
-   </html>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css" />
+
+  <link id="theme-vue" rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/css/theme/vue.min.css" />
+  <link id="theme-dark" rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/css/theme/dark.min.css" disabled />
+  <link id="theme-color" rel="stylesheet" href="" disabled />
+
+  <style>
+    /* --- theme: strip everything except the dark-mode toggle --- */
+    #switchThemeSpan,
+    #colorPickerSpan,
+    #showWidgetsSpan,
+    #progressSpan,
+    #scrollToTopSpan,
+    #themePickerPopupSpan,
+    #colorPickerPopupSpan {
+      display: none !important;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Free d100',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      homepage: 'index.md',
+      addWidgets: {
+        useSwitchMode: true,
+        themes: [
+          {
+            name: 'default',
+            light: null,          // null => toggle the #theme-vue / #theme-dark <link>s
+            dark: null,
+            lightColor: '#ffffff',
+            darkColor: '#3f3f3f',
+            lightThemeColor: '#42b883',
+            darkThemeColor: '#42b883'   // keep the accent the same in both modes
+          }
+        ]
+      }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
+
+  <link rel="stylesheet"
+    href="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/css/addWidgets.min.css" />
+  <script
+    src="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/js/addWidgets.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
+
+</body>
+
+</html>
