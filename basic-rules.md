@@ -34,9 +34,9 @@ In combat, the *units* in the roll result determine the hit location.
 | 6-8  | Chest     |
 | 9    | Head      |
 
-### TO-HIT Modifier
+### Silhouette
 
-A modifier depending on the silhouette size of the target.
+A modifier depending on the **silhouette** size of the target.
 
 | Approximate Size | Modifier |
 |------|------|
@@ -70,49 +70,49 @@ TODO
 
 ### Other Combat Options
 
-#### AIMED SHOT
+#### Aimed Shot
 
 (Ranged attacks)
 
 Forfeit your Movement on your turn to take aim and choose a desired **hit location** on the target, instead of depending on the random result of the *units* in your dice roll.
 
-#### TARGETED HIT
+#### Targeted Hit
 
 (Melee attacks)
 
 -20% Modifier to your melee attack roll, but you get to choose the desired **hit location** on the target, instead of depending on the random result of the *units* in your dice roll.
 
-#### FULL DEFENSE
-#### AMMO AND RELOADING
-#### AKIMBO
-#### SWAPPING WEAPONS
-#### BURST FIRE (firearms)
-#### FULL AUTO (firearms)
-#### CATCHING FIRE
-#### COVER
+#### Full Defense
+#### Ammo and Reloading
+#### Akimbo
+#### Swapping Weapons
+#### Burst Fire (firearms)
+#### Full Auto (firearms)
+#### Catching Fire
+#### Cover
 
 ## Health
-Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see [UNCERTAIN DEATH](#uncertain-death)).
+Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see [Uncertain Death](#uncertain-death)).
 
 ### Injuries
 TODO (defender choses between losing HP or suffering an Injury in targeted hit location, of a gravity that depends on DMG received)
 
 ### Healing and Resting
-#### REST
+#### Rest
 
 Recover 1HP/hour, unless HUNGRY/THIRSTY
 
-#### GOOD REST
+#### Good Rest
 (a good bed in a safe place): Recover 2HP/hour, unless HUNGRY/THIRSTY
 
-#### HUNGER/THIRST
+#### Hunger/Thirst
 start losing HP/day equal to # of days without food/drink.
 
-#### INJURY RECOVERY
+#### Injury Recovery
 INJURIES recover a # of hours/days/weeks after PROPER TREATMENT (bandages, sutures, bullet extraction, recovery in bed, etc.).
 
 
-### UNCERTAIN DEATH
+### Uncertain Death
 
 When a character’s HP is down to 0 or less, they are K.O’d. roll a d100 inside an obscure cup, face down.
 Reveal it when someone checks the downed character’s vitals:
@@ -124,21 +124,21 @@ If the final result is equal or under their Skill % (the most relevant to surviv
 If it’s higher, they are dead.
 
 
-### ARMOR
+### Armor
 Per hit location. Subtracts from DMG before applying to HP.
 Armor rating can go from 1 (light) to 6 (heavy).
 
-### DAMAGE (DMG)
+### Damage (DMG)
 
 When a character is hit, add the base Weapon DMG to the SLs of the dice roll from the attacker. Then subtract the ARMOR rating in the targeted hit location. The end result is the DMG taken.
 
 Players can decide to soak HP by taking an INJURY in that hit location, unless the attacker roll resulted in a CRITICAL HIT (then both HP loss and INJURY is caused).
 
-### CRITICAL HIT
+### Critical Hits
 A match of tens and units is a CRITICAL. If the action succeeded, both DMG to HP and an INJURY are caused.
 
 ## Other Rules
 
-### INSTINCT CHECK
+### Instinct Check
 
-### INSPIRE
+### Inspire
