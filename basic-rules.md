@@ -60,13 +60,19 @@ Weapons have **Range bands** in which they are supposed to operate. Firing outsi
 | Extreme | 300m-1000m |
 | Beyond | 1000m+ |
 
-### Initiative
+### Initiative and Rounds
 
-TODO
+**Rounds** last 5 seconds.
+
+**Initiative** is **team-based**: Everyone rolls at the beginning of each Round, but the highest result (in SLs) determines *which side goes first* (the turn order inside the team is left at those players' whims).
+
+Each character uses whatever Skill that is most relevant in the situation to determine their reaction time, reflexes, cunning, or preemtiveness.
+
+**Tie-Breaks**: Highest result wins. Critical Successes trump regular Successes.
 
 ### Movement and Actions
 
-TODO
+In a turn, a character can **Move** (up to 5 meters) and do an **Action** (attack, interact, talk, use something, etc). The action can be executed before or after Movement, at player's choice.
 
 ### Other Combat Options
 
