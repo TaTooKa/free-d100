@@ -4,15 +4,15 @@ This section covers certain rules and item listings for a modern/realistic setti
 
 ## Gear Rules
 
-### CARRYING CAPACITY
+### Carrying Capacity
 
-### OVERENCUMBERED
+### Overencumbered
 
-## WEAPONS
+## Weapons
 Armor Piercing Ammo
 Improvised firearms / Bad Quality / Good Quality
 
-### EXPLOSIVES
+### Explosives
 Area Damage
 
-## ARMOR
+## Armor
