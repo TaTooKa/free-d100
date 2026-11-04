@@ -1,2 +1,3 @@
 - [Home](/)
 - [Basic Rules](basic-rules.md)
+- [Gear](gear.md)
