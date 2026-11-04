@@ -19,7 +19,7 @@ SLs are used for determining "how good" an action result is (SL 0 just means a p
 
 ### Criticals
 
-A match of *tens* and *units* is a Critical (either Success or Failure). It exacerbates the result, for good or ill. In Combat, a CRITICAL SUCCESS causes HP DMG and an INJURY.
+A match of *tens* and *units* is a **Critical** (either *Success* or *Failure*). It exacerbates the result, for good or ill. In Combat, a CRITICAL SUCCESS causes both HP DMG and an INJURY.
 
 ## Combat Specifics
 
