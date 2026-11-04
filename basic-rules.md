@@ -9,13 +9,17 @@ The Probability % is determined by your **Skill %** (and other circumstantial ±
 > [!NOTE]
 > results between 00-99; Probability % can never be < 1% or > 97%.
 
-## Success Levels
+### Success Levels
 The *tens* in the dice result determine **Success Levels (SLs)** of the action. The higher, the better. 
 
 SLs are used for determining "how good" an action result is (SL 0 just means a partial or meager success). The higher your Skill %, the higher the margin to obtain a better SL.
 
 > [!NOTE]
 > In Combat, SLs are added to **weapon base damage** to determine damage dealt.
+
+### Criticals
+
+A match of *tens* and *units* is a Critical (either Success or Failure). It exacerbates the result, for good or ill. In Combat, a CRITICAL SUCCESS causes HP DMG and an INJURY.
 
 ## Combat Specifics
 
@@ -56,14 +60,27 @@ Weapons have **Range bands** in which they are supposed to operate. Firing outsi
 | Extreme | 300m-1000m |
 | Beyond | 1000m+ |
 
-### Combat Options
-
-#### AIMED SHOT (ranged)
+### Initiative
 
 TODO
 
-#### TARGETED HIT (melee)
+### Movement and Actions
+
 TODO
+
+### Other Combat Options
+
+#### AIMED SHOT
+
+(Ranged attacks)
+
+Forfeit your Movement on your turn to take aim and choose a desired **hit location** on the target, instead of depending on the random result of the *units* in your dice roll.
+
+#### TARGETED HIT
+
+(Melee attacks)
+
+-20% Modifier to your melee attack roll, but you get to choose the desired **hit location** on the target, instead of depending on the random result of the *units* in your dice roll.
 
 #### FULL DEFENSE
 #### AMMO AND RELOADING
@@ -75,10 +92,10 @@ TODO
 #### COVER
 
 ## Health
-Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see UNCERTAIN DEATH).
+Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see [UNCERTAIN DEATH](#uncertain-death)).
 
 ### Injuries
-TODO
+TODO (defender choses between losing HP or suffering an Injury in targeted hit location, of a gravity that depends on DMG received)
 
 ### Healing and Resting
 #### REST
