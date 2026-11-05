@@ -193,7 +193,7 @@ If you would have to suffer an Injury for a DMG tier you already have, take the 
 | 1-2 | **Grazed Forearm**<br/>(-5% IRP) | **Shallow Forearm Gash**<br/>(-5% IRP) | **Tender Bone Bruise**<br/>(-5% IRP) | **Blistered Hand**<br/>(-5% IRP) |
 | 3-4 | **Deep Bicep Puncture**<br/>(-10% IRP) | **Severed Finger(s)**<br/>(-10% IRP for fine manipulation, drop held item) | **Sprained Wrist**<br/>(-10% IRP, -20% IRP for melee attacks) | **3rd-Degree Burn on Hand**<br/>(-10% IRP, drop held item) |
 | 5-6 | **Punctured Brachial Artery**<br/>(-15% IRP, bleeding out; die in 2d10 turns unless treated) | **Sliced Wrist (Severed Tendons or Artery)**<br/>(Cannot grip, bleeding out; die in 2d10 turns unless treated) | **Dislocated Shoulder**<br/>(-10% IRP, arm unusable until popped back in with a successful Athletics/Medicine check) | **Melted Sleeve Fusing to Flesh**<br/>(-15% IRP, take 2 extra DMG if violently removed) |
-| 7-8 | **Shattered Elbow Joint**<br/>(Arm unusable, must drop anything held) | **Amputated Hand**<br/>(-10% IRP, Permanent loss of hand, heavy bleeding; die in 2d10 turns unless treated) | **Snapped Radius/Ulna**<br/>(Arm unusable, excruciating pain causes -10% to ALL actions) | **Charred Stump**<br/>(Permanent loss of hand) |
+| 7-8 | **Shattered Elbow Joint**<br/>(Arm unusable, must drop anything held) | **Amputated Hand**<br/>(-10% IRP, Permanent loss of hand, heavy bleeding; die in 2d10 turns unless treated) | **Snapped Radius/Ulna**<br/>(Arm unusable, excruciating pain causes -10% to ALL actions) | **Charred Stump**<br/>(-10% IRP, Permanent loss of hand) |
 | 9+ | **Completely Transfixed Shoulder**<br/>(Arm pinned or paralyzed,-30% IRP) | **Severed Arm**<br/>(-20% IRP, massive bleeding; will die in d10 turns unless treated) | **Pulped Arm**<br/>(Limb permanently destroyed, requires amputation) | **Dissolved Arm**<br/>(Permanent loss of arm, massive shock) |
 
 #### Chest Injuries
@@ -220,18 +220,24 @@ If you would have to suffer an Injury for a DMG tier you already have, take the 
 ### Healing and Resting
 #### Rest
 
-Recover 1HP/hour, unless HUNGRY/THIRSTY
+(non-strenuous activities): Recover 1HP/hour, unless *Hungry/Thirsty*
 
 #### Good Rest
-(a good bed in a safe place): Recover 2HP/hour, unless HUNGRY/THIRSTY
+(a good bed in a safe place): Recover 2HP/hour, unless *Hungry/Thirsty*
 
 #### Hunger/Thirst
-start losing HP/day equal to # of days without food/drink.
+start losing HP/day equal to number of days without food/drink.
 
 #### Injury Recovery
-INJURIES recover a # of hours/days/weeks after PROPER TREATMENT (bandages, sutures, bullet extraction, recovery in bed, etc.).
+**Injuries** recover a # of hours/days/weeks after **Proper Treatment** has been applied/administered (bandages, sutures, bullet extraction, complex surgery, recovery in bed, etc.):
 
-TODO: Injuries up to 4 DMG recover in 12 hours. Injuries of 5~6 DMG recover in a week. Injuries of 7+ DMG recover in a month.
+| Injury Tier | Recovery Time after **Proper Treatment** |
+|---|---|
+|DMG 1~2 | 12 hours |
+|DMG 3~4 | 48 hours |
+|DMG 5~6 | 1 week |
+|DMG 7~8 | 1 month |
+|DMG 9+ | 3 months |
 
 
 ### Uncertain Death
