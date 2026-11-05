@@ -6,103 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Free d100</title>
 
+  <!-- 1. docsify core theme -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css" />
 
+  <!-- 2. base theme + the dark variant toggled by addWidgets -->
   <link id="theme-vue" rel="stylesheet"
     href="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/css/theme/vue.min.css" />
   <link id="theme-dark" rel="stylesheet"
     href="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/css/theme/dark.min.css" disabled />
   <link id="theme-color" rel="stylesheet" href="" disabled />
 
-  <style>
-    /* --- theme: strip everything except the dark-mode toggle --- */
-    #switchThemeSpan,
-    #colorPickerSpan,
-    #showWidgetsSpan,
-    #progressSpan,
-    #scrollToTopSpan,
-    #themePickerPopupSpan,
-    #colorPickerPopupSpan {
-      display: none !important;
-    }
+  <!-- 3. site overrides — must come after all theme links -->
+  <link rel="stylesheet" href="custom.css" />
 
-    /* Dark mode only: #theme-dark has no `disabled` attribute when dark is active */
-    :root:has(#theme-dark:not([disabled])) {
-      --color-bg: #18181a;
-      /* page + content */
-      --sidebar-bg: #18181a;
-      /* sidebar panel */
-      --code-bg: #060d2b;
-      /* inline code */
-      --codeblock-bg: #060d2b;
-      /* fenced blocks */
-      --table-row-alt-bg: rgb(32, 32, 32);
-      /* zebra rows */
-      --sidebar-toggle-bg: rgba(1, 5, 25, .8);
-      --border-color: rgba(255, 255, 255, .12);
-      --sidebar-border-color: rgba(255, 255, 255, .12);
-    }
-
-    /* Light mode */
-    :root {
-      --heading-color: #0f172a;
-      /* near-black slate, was #2c3e50 */
-      --strong-color: #020617;
-      /* bold body text */
-    }
-
-    /* Dark mode (same :has() hook as your background rule) */
-    :root:has(#theme-dark:not([disabled])) {
-      --heading-color: #e6f1ff;
-      /* bright off-white, was #657b83 */
-      --strong-color: #ffffff;
-      /* bold punches out of #c8c8c8 body text */
-    }
-
-    #switchModeSpan {
-      top: 20px !important;
-      right: 20px !important;
-    }
-
-    .multi-column {
-      column-width: 120px;
-      column-gap: 1rem;
-      padding-left: 0;
-      margin-bottom: 1em;
-    }
-
-    .multi-column li {
-      break-inside: avoid;
-      /* Prevents single list items from breaking across columns */
-      margin-bottom: 0.25rem;
-      white-space: nowrap;
-    }
-
-    .specialized-skill-icon {
-      color: #db902e;
-    }
-
-    .instinctive-skill-icon {
-      color: #7dd3fc;
-    }
-  </style>
-
-</head>
-
-<body>
-  <div id="app"></div>
+  <!-- 4. docsify config — MUST be inline or in a script, and MUST come before docsify.min.js -->
   <script>
     window.$docsify = {
       name: 'Free d100',
       loadSidebar: true,
       subMaxLevel: 3,
       homepage: 'index.md',
+      catchPluginErrors: false,   // remove once the plugin is stable
       addWidgets: {
         useSwitchMode: true,
         themes: [
           {
             name: 'default',
-            light: null,          // null => toggle the #theme-vue / #theme-dark <link>s
+            light: null,             // null => toggle the #theme-vue / #theme-dark <link>s
             dark: null,
             lightColor: '#ffffff',   // only used by the (hidden) theme-picker swatch
             darkColor: '#18181a',
@@ -111,79 +41,27 @@
           }
         ]
       }
-    }
+    };
   </script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <!-- 5. docsify itself -->
   <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
 
+  <!-- 6. addWidgets (dark-mode toggle) -->
   <link rel="stylesheet"
     href="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/css/addWidgets.min.css" />
   <script
     src="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/js/addWidgets.min.js"></script>
 
+  <!-- 7. search -->
   <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
 
-  <script>
-    {
-      function symbolIcons(hook) {
-        const MAP = {
-          'Ⓘ': 'instinctive-skill-icon',
-          'Ⓢ': 'specialized-skill-icon',
-        };
-        const SKIP = new Set(['PRE', 'CODE', 'SCRIPT', 'STYLE', 'KBD', 'SAMP']);
-
-        function wrap(root) {
-          const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-            acceptNode(node) {
-              if (!/[ⒾⓈ]/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
-              for (let p = node.parentElement; p; p = p.parentElement) {
-                if (SKIP.has(p.tagName)) return NodeFilter.FILTER_REJECT;
-              }
-              return NodeFilter.FILTER_ACCEPT;
-            },
-          });
-
-          const hits = [];
-          while (walker.nextNode()) hits.push(walker.currentNode);
-
-          for (const node of hits) {
-            const frag = document.createDocumentFragment();
-            node.nodeValue.split(/([ⒾⓈ])/).forEach((part, i) => {
-              if (!part) return;
-              if (i % 2 === 0) {
-                frag.appendChild(document.createTextNode(part));
-              } else {
-                const span = document.createElement('span');
-                span.className = MAP[part];
-                span.textContent = part;
-                frag.appendChild(span);
-              }
-            });
-            node.parentNode.replaceChild(frag, node);
-          }
-        }
-
-        // Runs on every page load, after Markdown → HTML, before it hits the DOM
-        hook.afterEach(html => {
-          const tpl = document.createElement('template');
-          tpl.innerHTML = html;
-          wrap(tpl.content);
-          return tpl.innerHTML;
-        });
-
-        // Sidebar and navbar are rendered outside the page container
-        hook.mounted(() => {
-          ['.sidebar-nav', '.app-nav'].forEach(sel => {
-            const el = document.querySelector(sel);
-            if (el) wrap(el);
-          });
-        });
-      }
-
-      window.$docsify = window.$docsify || {};
-      $docsify.plugins = [symbolIcons, ...($docsify.plugins || [])];
-    }
-  </script>
-
+  <!-- 8. local plugins — after docsify.min.js so $docsify.plugins exists -->
+  <script src="plugins/symbol-icons.js"></script>
 </body>
 
 </html>

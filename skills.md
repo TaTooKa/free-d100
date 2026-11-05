@@ -91,7 +91,7 @@ This is a list of Skills for characters in a realistic/modern setting:
 * Piloting Ⓢ
 * Psychology Ⓢ
 * Robotics Ⓢ
-* Security Ⓘ
+* Security Ⓢ
 * Seduction Ⓘ
 * Sleight of Hand Ⓘ
 * Stealth Ⓘ

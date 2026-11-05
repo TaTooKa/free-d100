@@ -1,0 +1,86 @@
+/* ==========================================================================
+   custom.css — Free d100
+   Must load AFTER the docsify core theme and the vue/dark theme links,
+   otherwise the core theme's variables win the cascade.
+   ========================================================================== */
+
+/* --- 1. Strip everything from addWidgets except the dark-mode toggle ---- */
+#switchThemeSpan,
+#colorPickerSpan,
+#showWidgetsSpan,
+#progressSpan,
+#scrollToTopSpan,
+#themePickerPopupSpan,
+#colorPickerPopupSpan {
+  display: none !important;
+}
+
+#switchModeSpan {
+  top: 20px !important;
+  right: 20px !important;
+}
+
+/* --- 2. Theme variables ------------------------------------------------ */
+
+/* Light mode */
+:root {
+  --heading-color: #0f172a;
+  /* near-black slate, was #2c3e50 */
+  --strong-color: #020617;
+  /* bold body text */
+}
+
+/* Dark mode only: #theme-dark has no `disabled` attribute when dark is active */
+:root:has(#theme-dark:not([disabled])) {
+  /* page + content */
+  --color-bg: #18181a;
+  --sidebar-bg: #18181a;
+  /* sidebar panel */
+
+  /* code */
+  --code-bg: #060d2b;
+  /* inline code */
+  --codeblock-bg: #060d2b;
+  /* fenced blocks */
+
+  /* chrome */
+  --table-row-alt-bg: rgb(32, 32, 32);
+  /* zebra rows */
+  --sidebar-toggle-bg: rgba(1, 5, 25, .8);
+  --border-color: rgba(255, 255, 255, .12);
+  --sidebar-border-color: rgba(255, 255, 255, .12);
+
+  /* text */
+  --heading-color: #e6f1ff;
+  /* bright off-white, was #657b83 */
+  --strong-color: #ffffff;
+  /* punches out of #c8c8c8 body text */
+}
+
+/* --- 3. Multi-column lists --------------------------------------------- */
+.multi-column {
+  column-width: 120px;
+  column-gap: 1rem;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+.multi-column li {
+  break-inside: avoid;
+  /* don't split a single item across columns */
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+}
+
+/* --- 4. Skill icons injected by plugins/symbol-icons.js ----------------- */
+.specialized-skill-icon {
+  color: #db902e;
+  font-family: "Segoe UI Symbol", "DejaVu Sans", sans-serif;
+  cursor: help;
+}
+
+.instinctive-skill-icon {
+  color: #7dd3fc;
+  font-family: "Segoe UI Symbol", "DejaVu Sans", sans-serif;
+  cursor: help;
+}
