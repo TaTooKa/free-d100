@@ -180,41 +180,41 @@ If you would have to suffer an Injury for a DMG tier you already have, take the 
 
 | DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
 |-----|----------|----------|-------|-------------------|
-| 1-2 | **Superficial Calf Puncture**<br/>(-5% IRP) | Bleeding Shin Gash | Deep Thigh Bruise | Localized Blistering |
-| 3-4 | **Deep Muscle Puncture**<br/>(-10% IRP) | Sliced Hamstring | Sprained Ankle | 2nd-Degree Muscle Burn |
-| 5-6 | **Lodged Projectile / Embedded Shrapnel**<br/>(-10% IRP, and risk of Infection if not treated soon) | Severed Achilles Tendon | Shattered Kneecap | Armor/Clothing Fused to Skin |
-| 7-8 | **Severed Femoral Artery**<br/>(bleeding out; will die in d10 turns unless treated) | Amputated Foot | Compound Tibia Fracture | Bone-Deep Necrosis |
-| 9+ | **Shattered Femur**<br/>(impossible to use leg until treated and recovered) | Severed Leg | Pulverized Femur | Incinerated Leg |
+| 1-2 | **Superficial Calf Puncture**<br/>(-5% IRP) | **Bleeding Shin Gash**<br/>(-5% IRP) | **Deep Thigh Bruise**<br/>(-5% IRP) | **Localized Blistering**<br/>(-5% IRP) |
+| 3-4 | **Deep Muscle Puncture**<br/>(-10% IRP) | **Sliced Hamstring**<br/>(-10% IRP, Movement reduced to 2m) | **Sprained Ankle**<br/>(-10% IRP, cannot run) | **2nd-Degree Muscle Burn**<br/>(-10% IRP) |
+| 5-6 | **Lodged Projectile / Embedded Shrapnel**<br/>(-10% IRP, and risk of Infection if not treated soon) | **Severed Achilles Tendon**<br/>(-20% IRP, Movement reduced to 1m) | **Shattered Kneecap**<br/>(-20% IRP, Movement reduced to 1m) | **Armor/Clothing Fused to Skin**<br/>(-10% IRP, take 2 extra DMG if violently removed) |
+| 7-8 | **Severed Femoral Artery**<br/>(bleeding out; will die in d10 turns unless treated) | **Amputated Foot**<br/>(-30% IRP, cannot stand without support, permanent loss) | **Compound Tibia Fracture**<br/>(-30% IRP, impossible to walk, requires surgery) | **Bone-Deep Necrosis**<br/>(-20% IRP, high risk of lethal infection or amputation) |
+| 9+ | **Shattered Femur**<br/>(impossible to use leg until treated and recovered) | **Severed Leg**<br/>(-20% IRP, massive bleeding; will die in d10 turns unless treated) | **Pulverized Femur**<br/>(-20% IRP, Impossible to use leg, instant Fall Prone, excruciating pain) | **Incinerated Leg**<br/>(Limb rendered useless, permanent loss) |
 
 #### Arm Injuries
 
 | DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
 |-----|----------|----------|-------|-------------------|
-| 1-2 | Grazed Forearm | Shallow Forearm Gash | Tender Bone Bruise | Blistered Hand |
-| 3-4 | Deep Bicep Puncture | Severed Finger(s) | Sprained Wrist | 3rd-Degree Burn on Hand |
-| 5-6 | Punctured Brachial Artery | Sliced Wrist (Severed Tendons or Artery) | Dislocated Shoulder | Melted Sleeve Fusing to Flesh |
-| 7-8 | Shattered Elbow Joint | Amputated Hand | Snapped Radius/Ulna | Charred Stump |
-| 9+ | Completely Transfixed Shoulder | Severed Arm | Pulped Arm | Dissolved Arm |
+| 1-2 | **Grazed Forearm**<br/>(-5% IRP) | **Shallow Forearm Gash**<br/>(-5% IRP) | **Tender Bone Bruise**<br/>(-5% IRP) | **Blistered Hand**<br/>(-5% IRP) |
+| 3-4 | **Deep Bicep Puncture**<br/>(-10% IRP) | **Severed Finger(s)**<br/>(-10% IRP for fine manipulation, drop held item) | **Sprained Wrist**<br/>(-10% IRP, -20% IRP for melee attacks) | **3rd-Degree Burn on Hand**<br/>(-10% IRP, drop held item) |
+| 5-6 | **Punctured Brachial Artery**<br/>(-15% IRP, bleeding out; die in 2d10 turns unless treated) | **Sliced Wrist (Severed Tendons or Artery)**<br/>(Cannot grip, bleeding out; die in 2d10 turns unless treated) | **Dislocated Shoulder**<br/>(-10% IRP, arm unusable until popped back in with a successful Athletics/Medicine check) | **Melted Sleeve Fusing to Flesh**<br/>(-15% IRP, take 2 extra DMG if violently removed) |
+| 7-8 | **Shattered Elbow Joint**<br/>(Arm unusable, must drop anything held) | **Amputated Hand**<br/>(-10% IRP, Permanent loss of hand, heavy bleeding; die in 2d10 turns unless treated) | **Snapped Radius/Ulna**<br/>(Arm unusable, excruciating pain causes -10% to ALL actions) | **Charred Stump**<br/>(Permanent loss of hand) |
+| 9+ | **Completely Transfixed Shoulder**<br/>(Arm pinned or paralyzed,-30% IRP) | **Severed Arm**<br/>(-20% IRP, massive bleeding; will die in d10 turns unless treated) | **Pulped Arm**<br/>(Limb permanently destroyed, requires amputation) | **Dissolved Arm**<br/>(Permanent loss of arm, massive shock) |
 
 #### Chest Injuries
 
 | DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
 |-----|----------|----------|-------|-------------------|
-| 1-2 | Shallow Flesh Puncture | Shallow Abdominal Gash | Wind Knocked Out | Widespread Torso Blistering |
-| 3-4 | Lodged Projectile in Gut | Flayed Torso (Exposed Ribs) | Multiple Broken Ribs | Melted Armor Fusing to Flesh |
-| 5-6 | Punctured Lung | Slashed Diaphragm (Labored breathing) | Collapsed Lung | 3rd-Degree Chest Burns |
-| 7-8 | Pierced Stomach or Bowel | Deep Gut Laceration | Crushed Sternum | Scorched Lungs (From smoke/fume inhalation) |
-| 9+ | Lodged Projectile in Spine (Risk of severe paralysis) | Spilled Intestines (Character must physically hold them in to act) | Ruptured Spleen (Severe internal bleeding) | Exposed Charred Ribs / Deep Necrosis |
+| 1-2 | **Shallow Flesh Puncture**<br/>(-5% IRP on physical exertion) | **Shallow Abdominal Gash**<br/>(-5% IRP) | **Wind Knocked Out**<br/>(Lose your next Action, then -5% IRP) | **Widespread Torso Blistering**<br/>(-5% IRP, cannot wear Armor comfortably) |
+| 3-4 | **Lodged Projectile / Shrapnel in Gut**<br/>(-10% IRP, risk of infection) | **Flayed Torso (Exposed Ribs)**<br/>(-10% IRP, risk of infection) | **Multiple Broken Ribs**<br/>(-10% IRP, taking further DMG requires an *Instinct Check*) | **Melted Armor/Clothes Fusing to Flesh**<br/>(-10% IRP, take 2 extra DMG if violently removed) |
+| 5-6 | **Punctured Lung**<br/>(-20% IRP, cannot run, suffocating) | **Slashed Diaphragm**<br/>(-20% IRP, breathing labored, cannot sprint) | **Collapsed Lung**<br/>(-20% IRP, cannot exert or run) | **3rd-Degree Chest Burns**<br/>(-20% IRP, high risk of infection) |
+| 7-8 | **Pierced Stomach or Bowel**<br/>(-20% IRP, lethal infection in 2 days if untreated) | **Deep Gut Laceration**<br/>(-10% IRP, massive bleeding; die in 2d10 turns unless treated) | **Crushed Sternum**<br/>(-20% IRP, excruciating pain with every breath) | **Scorched Lungs**<br/>(-20% IRP from smoke/fumes, coughing fits, cannot run) |
+| 9+ | **Lodged Projectile / Shrapnel in Spine**<br/>(paralysis below waist; requires surgery) | **Spilled Intestines**<br/>(-20% IRP, Must use 1 hand to physically hold them in) | **Ruptured Spleen**<br/>(-20% IRP, Severe internal bleeding, death in 1d10 hours unless treated) | **Exposed Charred Ribs / Deep Necrosis**<br/>(-20% IRP, cannot use clothing or armor, fatal infection risk) |
 
 #### Head Injuries
 
 | DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
 |-----|----------|----------|-------|-------------------|
-| 1-2 | Pierced Cheek or Ear | Scalp Cut (Bleeds heavily into the eyes, blinding them temporarily) | Bloody Nose and Mild Concussion | Blistered Face and Singed Hair |
-| 3-4 | Punctured Sinus Cavity | Deep Facial Laceration | Broken Jaw | Melted Facial Features (Nose, lips, or ears gone) |
-| 5-6 | Pierced Eye and Socket (Loss of one eye) | Sliced Off Ear or Nose | Severe Concussion (Disorientation and nausea) | Scorched Airway (Requires tracheotomy/tubes to breathe safely) |
-| 7-8 | Embedded Object in Skull (Chronic migraines/seizures) | Severed Vocal Cords (Permanent muteness) | Fractured Skull | Melted Corneas (Total blindness) |
-| 9+ | Transfixed Jaw and Palate (Unable to speak or eat normally) | Flayed Face (Extensive nerve damage and disfigurement) | Traumatic Brain Injury (Loss of coordination or memory) | Charred Scalp with Exposed Skull Bone |
+| 1-2 | **Pierced Cheek or Ear**<br/>(-5% IRP on Social/Awareness) | **Scalp Cut**<br/>(-5% IRP, bleeds heavily into eyes blinding temporarily until wiped) | **Bloody Nose and Mild Concussion**<br/>(-5% IRP on Mental actions) | **Blistered Face and Singed Hair**<br/>(-5% IRP) |
+| 3-4 | **Punctured Sinus Cavity**<br/>(-10% IRP on Awareness) | **Deep Facial Laceration**<br/>(-10% IRP, prominent scarring) | **Broken Jaw**<br/>(-10% IRP, cannot speak clearly or Inspire) | **Melted Facial Features**<br/>(-10% IRP, horrific scarring) |
+| 5-6 | **Pierced Eye and Socket**<br/>(Permanent loss of one eye, -20% IRP to visual Awareness/Ranged attacks) | **Sliced Off Ear or Nose**<br/>(-20% IRP to related Awareness, permanent disfigurement) | **Severe Concussion**<br/>(-20% IRP, disorientation and nausea) | **Scorched Airway**<br/>(-20% IRP, requires tracheotomy/tubes to breathe safely) |
+| 7-8 | **Embedded Object in Skull**<br/>(-20% IRP on all Mental actions, chronic migraines) | **Severed Vocal Cords**<br/>(-10% IRP, permanent muteness, cannot speak or Inspire) | **Fractured Skull**<br/>(-30% IRP, make Endurance check to avoid blacking out) | **Melted Corneas**<br/>(Total blindness, impossible to do sight-dependent tasks) |
+| 9+ | **Transfixed Jaw and Palate**<br/>(Unable to speak or eat normally, requires liquid diet, -20% IRP to Social) | **Flayed Face**<br/>(Extensive nerve damage, terrifying visage, -20% IRP to Social interactions) | **Traumatic Brain Injury**<br/>(-20% IRP, Permanent loss of coordination/memory) | **Charred Scalp with Exposed Skull Bone**<br/>(-20% IRP, permanent disfigurement and vulnerability) |
 
 
 ### Healing and Resting
