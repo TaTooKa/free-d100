@@ -98,14 +98,51 @@ Forfeit your Action on your turn to focus on dodging, blocking and taking cover.
 
 #### Ammo and Reloading
 
+Ammo is simplified in clips/mags of Low/Med/High Caliber. Tally each bullet individually.
+
  When your weapon runs out of ammo, forfeit your Movement OR your Action to **RELOAD** a new clip/mag.
 
-#### Akimbo
+#### Akimbo / Dual wielding
+
+If using two 1-handed weapons, **suffer -10%** to your Probability of hitting, but **add base DMG of both weapons** to your SLs. If they use ammo, they both spend it separately.
+
 #### Swapping Weapons
+
+Forfeit your Movement OR your Action to put your currently held weapon away (in your backpack, holster, sheath, etc) and grab another one to have ready to use. 
+
+> [!NOTE]
+> Alternatively, you can drop the unused one on the ground and get the new one as a free action, but picking it up later takes your main action. 
+
 #### Burst Fire (firearms)
+
+If your weapon has **[BF]**, Spend 3 bullets to **gain +10%** to the Probability of hitting, and **+1 base DMG**.
+
 #### Full Auto (firearms)
+
+If your weapon has **[FA]**, Spend 6 bullets to **gain +20%** to the Probability of hitting, and **+2 base DMG**.
+
 #### Catching Fire
+
+Certain weapons or effects are **incendiary** in nature. They deal a base DMG, and then every turn afterwards, deal the previous DMG -1. When reaching 0 DMG the fire is put out naturally.
+
+> [!NOTE]
+> **TIP**: Use a die on the table as a counter to tally fire DMG each turn; remove it once it reaches 0. 
+
+Each time fire deals its damage, there is a 20% chance it spreads to something flammable nearby (at GM’s discretion), increasing current DMG +1 for that new fire source.
+
+Armor reduces incoming fire DMG.
+
+> [!NOTE]
+> Putting out a fire gains +30% if using **something helpful** like water, heavy cloth, etc. If using a **fire extinguisher** you automatically succeed with no roll required.
+
+
 #### Cover
+
+**HALF COVER**: -10% Probability to hit you
+
+**FULL COVER**: -20% Probability to hit you
+
+**TOTAL COVER** (as Full Cover but without peeking out): Impossible to hit you
 
 ## Health
 Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see [Uncertain Death](#uncertain-death)).
