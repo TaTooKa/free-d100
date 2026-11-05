@@ -194,4 +194,27 @@ A match of tens and units is a CRITICAL. If the action succeeded, both DMG to HP
 
 ### Instinct Check
 
+Sometimes a character’s composure is put to the test and they need to do an **Instinct Check**. This is triggered when:
+
+* At half their max HP
+* Suffered 2 or more Injuries
+* Allied forces reduced to half or less
+* Leader taken out or fleeing
+* Exposed to a horror
+
+The character must roll under a relevant Skill %. If they fail, they are put in a FIGHT/FLIGHT/FREEZE/FAWN state (at GM discretion, picking the most obvious or detrimental one):
+
+* **FIGHT**: lash out violently; attack anyone (friend or foe)
+* **FLIGHT**: Escape ASAP; distance from / block the danger
+* **FREEZE**: Become immobilized; in shock; unable to act 
+* **FAWN**: Surrender; yield; submit to (or ally with) the enemy 
+
+While in this state, they must act accordingly, and any action that would contradict the expected behavior must pass a relevant Skill check to be even allowed to act that way. The effect lasts until the current stressful situation ends.
+
 ### Inspire
+
+Anyone can attempt to **Inspire** their allies with a warcry or a morale-boosting speech as a normal action. 
+
+Make a roll with a relevant Skill %. 
+
+On a Success, all of your allies gain **+20%** on their **Instinct Checks** for the remainder of the situation (combat, chase, high action scene, etc), OR they can remove their FIGHT/FLIGHT/FREEZE/FAWN state. On a Critical Success, they get both benefits.
