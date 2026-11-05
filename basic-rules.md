@@ -7,7 +7,10 @@ Roll d% equal or under the **Probability %** (but as high as possible to get mor
 The Probability % is determined by your **Skill %** (and other circumstantial ±% modifiers).
 
 > [!NOTE]
-> results between 00-99; Probability % can never be < 1% or > 97%.
+> dice results read as 00-99 and are never modified (Probability % is); 
+> 
+> Probability % can never be < 1% or > 97%.
+> 
 
 ### Success Levels
 The *tens* in the dice result determine **Success Levels (SLs)** of the action. The higher, the better. 
@@ -68,7 +71,8 @@ Weapons have **Range bands** in which they are supposed to operate. Firing outsi
 
 Each character uses whatever Skill that is most relevant in the situation to determine their reaction time, reflexes, cunning, or preemtiveness.
 
-**Tie-Breaks**: Highest result wins. Critical Successes trump regular Successes.
+> [!NOTE]
+> **Tie-Breaks**: Highest successful result wins. Critical Successes trump regular Successes.
 
 ### Movement and Actions
 
@@ -89,7 +93,13 @@ Forfeit your Movement on your turn to take aim and choose a desired **hit locati
 -20% Modifier to your melee attack roll, but you get to choose the desired **hit location** on the target, instead of depending on the random result of the *units* in your dice roll.
 
 #### Full Defense
+
+Forfeit your Action on your turn to focus on dodging, blocking and taking cover. Enemies get **-20% to the Probability %** to hit you. If you are wielding a Melee weapon and an enemy attacks you in melee and misses, you **PARRY** (make a free melee attack roll against that enemy as a *reaction*, outside of your turn).
+
 #### Ammo and Reloading
+
+ When your weapon runs out of ammo, forfeit your Movement OR your Action to **RELOAD** a new clip/mag.
+
 #### Akimbo
 #### Swapping Weapons
 #### Burst Fire (firearms)
