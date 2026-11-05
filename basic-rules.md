@@ -89,6 +89,19 @@ Each character uses whatever Skill that is most relevant in the situation (typic
 
 In a turn, a character can **Move** (up to 5 meters) and do an **Action** (attack, interact, talk, use something, etc). The action can be executed before or after Movement, at player's choice.
 
+### Armor
+Per hit location. Subtracts from DMG before applying to HP.
+Armor rating can go from 1 (light) to 6 (heavy). See Gear.
+
+### Damage (DMG)
+
+When a character is hit, add the base Weapon DMG to the SLs of the dice roll from the attacker. Then subtract the ARMOR rating in the targeted hit location. The end result is the DMG taken.
+
+Players can decide to soak HP by suffering an [Injury](#injuries) in that hit location, unless the attacker roll resulted in a CRITICAL HIT (then both HP loss and INJURY is caused).
+
+### Critical Hits
+A match of tens and units is a CRITICAL. If the action succeeded, both DMG to HP and an INJURY are caused.
+
 ### Other Combat Options
 
 #### Aimed Shot
@@ -150,7 +163,54 @@ Armor reduces incoming fire DMG.
 Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see [Uncertain Death](#uncertain-death)).
 
 ### Injuries
-TODO (defender choses between losing HP or suffering an Injury in targeted hit location, of a gravity that depends on DMG received)
+
+Whenever a character receives DMG, the controlling player can choose if they want it to go directly to their HP, or if they rather suffer an Injury.
+
+> [!NOTE]
+> Injuries let you soak HP DMG (and thus help avoid dying by falling below 0 HP), but they give penalties and negative modifiers, and [take longer to heal](#injury-recovery).
+
+The exact Injury suffered is determined by the **hit location** where the damage was dealt, the **DMG type**, and the **amount of DMG** received (after subtracting Armor).
+
+#### Leg Injuries
+
+| DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
+|-----|----------|----------|-------|-------------------|
+| 1-2 | Superficial Calf Puncture | Bleeding Shin Gash | Deep Thigh Bruise | Localized Blistering |
+| 3-4 | Deep Muscle Puncture | Sliced Hamstring | Sprained Ankle | 2nd-Degree Muscle Burn |
+| 5-6 | Lodged Projectile / Embedded Shrapnel | Severed Achilles Tendon | Shattered Kneecap | Armor/Clothing Fused to Skin |
+| 7-8 | Severed Femoral Artery | Amputated Foot | Compound Tibia Fracture | Bone-Deep Necrosis |
+| 9+ | Shattered Femur | Severed Leg | Pulverized Femur | Incinerated Leg |
+
+#### Arm Injuries
+
+| DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
+|-----|----------|----------|-------|-------------------|
+| 1-2 | Grazed Forearm | Shallow Forearm Gash | Tender Bone Bruise | Blistered Hand |
+| 3-4 | Deep Bicep Puncture | Severed Finger(s) | Sprained Wrist | 3rd-Degree Burn on Hand |
+| 5-6 | Punctured Brachial Artery | Sliced Wrist (Severed Tendons or Artery) | Dislocated Shoulder | Melted Sleeve Fusing to Flesh |
+| 7-8 | Shattered Elbow Joint | Amputated Hand | Snapped Radius/Ulna | Charred Stump |
+| 9+ | Completely Transfixed Shoulder | Severed Arm | Pulped Arm | Dissolved Arm |
+
+#### Chest Injuries
+
+| DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
+|-----|----------|----------|-------|-------------------|
+| 1-2 | Shallow Flesh Puncture | Shallow Abdominal Gash | Wind Knocked Out | Widespread Torso Blistering |
+| 3-4 | Lodged Projectile in Gut | Flayed Torso (Exposed Ribs) | Multiple Broken Ribs | Melted Armor Fusing to Flesh |
+| 5-6 | Punctured Lung | Slashed Diaphragm (Labored breathing) | Collapsed Lung | 3rd-Degree Chest Burns |
+| 7-8 | Pierced Stomach or Bowel | Deep Gut Laceration | Crushed Sternum | Scorched Lungs (From smoke/fume inhalation) |
+| 9+ | Lodged Projectile in Spine (Risk of severe paralysis) | Spilled Intestines (Character must physically hold them in to act) | Ruptured Spleen (Severe internal bleeding) | Exposed Charred Ribs / Deep Necrosis |
+
+#### Head Injuries
+
+| DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
+|-----|----------|----------|-------|-------------------|
+| 1-2 | Pierced Cheek or Ear | Scalp Cut (Bleeds heavily into the eyes, blinding them temporarily) | Bloody Nose and Mild Concussion | Blistered Face and Singed Hair |
+| 3-4 | Punctured Sinus Cavity | Deep Facial Laceration | Broken Jaw | Melted Facial Features (Nose, lips, or ears gone) |
+| 5-6 | Pierced Eye and Socket (Loss of one eye) | Sliced Off Ear or Nose | Severe Concussion (Disorientation and nausea) | Scorched Airway (Requires tracheotomy/tubes to breathe safely) |
+| 7-8 | Embedded Object in Skull (Chronic migraines/seizures) | Severed Vocal Cords (Permanent muteness) | Fractured Skull | Melted Corneas (Total blindness) |
+| 9+ | Transfixed Jaw and Palate (Unable to speak or eat normally) | Flayed Face (Extensive nerve damage and disfigurement) | Traumatic Brain Injury (Loss of coordination or memory) | Charred Scalp with Exposed Skull Bone |
+
 
 ### Healing and Resting
 #### Rest
@@ -166,6 +226,8 @@ start losing HP/day equal to # of days without food/drink.
 #### Injury Recovery
 INJURIES recover a # of hours/days/weeks after PROPER TREATMENT (bandages, sutures, bullet extraction, recovery in bed, etc.).
 
+TODO: Injuries up to 4 DMG recover in 12 hours. Injuries of 5~6 DMG recover in a week. Injuries of 7+ DMG recover in a month.
+
 
 ### Uncertain Death
 
@@ -177,20 +239,6 @@ Reveal it when someone checks the downed character’s vitals:
 If the final result is equal or under their Skill % (the most relevant to survive the DMG received, typically *Endurance*) - the negative HP penalty, they are alive (back with 1 HP).
 
 If it’s higher, they are dead.
-
-
-### Armor
-Per hit location. Subtracts from DMG before applying to HP.
-Armor rating can go from 1 (light) to 6 (heavy).
-
-### Damage (DMG)
-
-When a character is hit, add the base Weapon DMG to the SLs of the dice roll from the attacker. Then subtract the ARMOR rating in the targeted hit location. The end result is the DMG taken.
-
-Players can decide to soak HP by taking an INJURY in that hit location, unless the attacker roll resulted in a CRITICAL HIT (then both HP loss and INJURY is caused).
-
-### Critical Hits
-A match of tens and units is a CRITICAL. If the action succeeded, both DMG to HP and an INJURY are caused.
 
 ## Other Rules
 
