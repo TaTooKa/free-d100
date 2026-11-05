@@ -63,6 +63,17 @@ Weapons have **Range bands** in which they are supposed to operate. Firing outsi
 | Extreme | 300m-1000m |
 | Beyond | 1000m+ |
 
+
+### Cover
+
+A modifier for when a character's silhouette is partially or totally occluded by cover or obstacles.
+
+| Cover | Modifier |
+|------|------|
+| **Half Cover** | -10% Probability to hit you |
+| **Full Cover** | -20% Probability to hit you |
+| **Total Cover** <br/>(as Full Cover but<br/>without peeking out)| Impossible to hit you |
+
 ### Initiative and Rounds
 
 **Rounds** last 5 seconds.
@@ -134,15 +145,6 @@ Armor reduces incoming fire DMG.
 
 > [!NOTE]
 > Putting out a fire gains +30% if using **something helpful** like water, heavy cloth, etc. If using a **fire extinguisher** you automatically succeed with no roll required.
-
-
-#### Cover
-
-**HALF COVER**: -10% Probability to hit you
-
-**FULL COVER**: -20% Probability to hit you
-
-**TOTAL COVER** (as Full Cover but without peeking out): Impossible to hit you
 
 ## Health
 Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see [Uncertain Death](#uncertain-death)).
