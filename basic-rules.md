@@ -4,7 +4,7 @@
 
 Roll d% equal or under the **Probability %** (but as high as possible to get more SLs).
 
-The Probability % is determined by your **Skill %** (and other circumstantial ±% modifiers).
+The Probability % is determined by your **[Skill](/skills) %** (and other circumstantial ±% modifiers).
 
 > [!NOTE]
 > dice results read as 00-99 and are never modified (Probability % is); 
@@ -69,7 +69,7 @@ Weapons have **Range bands** in which they are supposed to operate. Firing outsi
 
 **Initiative** is **team-based**: Everyone rolls at the beginning of each Round, but the highest result (in SLs) determines *which side goes first* (the turn order inside the team is left at those players' whims).
 
-Each character uses whatever Skill that is most relevant in the situation to determine their reaction time, reflexes, cunning, or preemtiveness.
+Each character uses whatever Skill that is most relevant in the situation (typically *Athletics* or *Awareness*) to determine their reaction time, reflexes, cunning, or preemtiveness.
 
 > [!NOTE]
 > **Tie-Breaks**: Highest successful result wins. Critical Successes trump regular Successes.
@@ -172,7 +172,7 @@ Reveal it when someone checks the downed character’s vitals:
 
 * Subtract the character’s current negative HP as increments of -10% from the Probability %
 
-If the final result is equal or under their Skill % (the most relevant to survive the DMG received) - the negative HP penalty, they are alive (back with 1 HP).
+If the final result is equal or under their Skill % (the most relevant to survive the DMG received, typically *Endurance*) - the negative HP penalty, they are alive (back with 1 HP).
 
 If it’s higher, they are dead.
 
@@ -202,7 +202,7 @@ Sometimes a character’s composure is put to the test and they need to do an **
 * Leader taken out or fleeing
 * Exposed to a horror
 
-The character must roll under a relevant Skill %. If they fail, they are put in a FIGHT/FLIGHT/FREEZE/FAWN state (at GM discretion, picking the most obvious or detrimental one):
+The character must roll under a relevant Skill % (typically *Composure*). If they fail, they are put in a FIGHT/FLIGHT/FREEZE/FAWN state (at GM discretion, picking the most obvious or detrimental one):
 
 * **FIGHT**: lash out violently; attack anyone (friend or foe)
 * **FLIGHT**: Escape ASAP; distance from / block the danger
@@ -215,6 +215,6 @@ While in this state, they must act accordingly, and any action that would contra
 
 Anyone can attempt to **Inspire** their allies with a warcry or a morale-boosting speech as a normal action. 
 
-Make a roll with a relevant Skill %. 
+Make a roll with a relevant Skill % (typically *Leadership*, *Persuasion* or *Empathy*). 
 
 On a Success, all of your allies gain **+20%** on their **Instinct Checks** for the remainder of the situation (combat, chase, high action scene, etc), OR they can remove their FIGHT/FLIGHT/FREEZE/FAWN state. On a Critical Success, they get both benefits.

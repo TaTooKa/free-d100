@@ -75,6 +75,15 @@
       break-inside: avoid;
       /* Prevents single list items from breaking across columns */
       margin-bottom: 0.25rem;
+      white-space: nowrap;
+    }
+
+    .specialized-skill-icon {
+      color: #db902e;
+    }
+
+    .instinctive-skill-icon {
+      color: #7dd3fc;
     }
   </style>
 
@@ -112,6 +121,68 @@
     src="//cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/dist/js/addWidgets.min.js"></script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
+
+  <script>
+    {
+      function symbolIcons(hook) {
+        const MAP = {
+          'Ⓘ': 'instinctive-skill-icon',
+          'Ⓢ': 'specialized-skill-icon',
+        };
+        const SKIP = new Set(['PRE', 'CODE', 'SCRIPT', 'STYLE', 'KBD', 'SAMP']);
+
+        function wrap(root) {
+          const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+            acceptNode(node) {
+              if (!/[ⒾⓈ]/.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
+              for (let p = node.parentElement; p; p = p.parentElement) {
+                if (SKIP.has(p.tagName)) return NodeFilter.FILTER_REJECT;
+              }
+              return NodeFilter.FILTER_ACCEPT;
+            },
+          });
+
+          const hits = [];
+          while (walker.nextNode()) hits.push(walker.currentNode);
+
+          for (const node of hits) {
+            const frag = document.createDocumentFragment();
+            node.nodeValue.split(/([ⒾⓈ])/).forEach((part, i) => {
+              if (!part) return;
+              if (i % 2 === 0) {
+                frag.appendChild(document.createTextNode(part));
+              } else {
+                const span = document.createElement('span');
+                span.className = MAP[part];
+                span.textContent = part;
+                frag.appendChild(span);
+              }
+            });
+            node.parentNode.replaceChild(frag, node);
+          }
+        }
+
+        // Runs on every page load, after Markdown → HTML, before it hits the DOM
+        hook.afterEach(html => {
+          const tpl = document.createElement('template');
+          tpl.innerHTML = html;
+          wrap(tpl.content);
+          return tpl.innerHTML;
+        });
+
+        // Sidebar and navbar are rendered outside the page container
+        hook.mounted(() => {
+          ['.sidebar-nav', '.app-nav'].forEach(sel => {
+            const el = document.querySelector(sel);
+            if (el) wrap(el);
+          });
+        });
+      }
+
+      window.$docsify = window.$docsify || {};
+      $docsify.plugins = [symbolIcons, ...($docsify.plugins || [])];
+    }
+  </script>
 
 </body>
 

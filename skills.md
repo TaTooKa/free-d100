@@ -4,9 +4,9 @@ Characters have a list of Skills, each with a rating %.
 
 Skills can be anything, but are roughly split in two categories: *Instinctive* and *Specialized*. 
 
-* *Instinctive* skills are those that basically everyone has access or training in, or have probably already used before in their lives (Running, Dodging, Lying, etc). These are assumed to be at a **minimum of 20%**. 
+* *Instinctive* (Ⓘ) skills are those that basically everyone has access or training in, or have probably already used before in their lives (Running, Dodging, Lying, etc). These are assumed to be at a **minimum of 20%**. 
 
-* *Specialized* skills are those that require academic or formal training (Surgery, Astrophysics, Military Strategy, etc). These are assumed to be at **0% by default**. 
+* *Specialized* (Ⓢ) skills are those that require academic or formal training (Surgery, Astrophysics, Military Strategy, etc). These are assumed to be at **0% by default**. 
 
 > [!NOTE]
 > (even with a Skill at 0% you can attempt an action; only a result of 00 would succeed). 
@@ -46,60 +46,61 @@ This is a list of Skills for characters in a realistic/modern setting:
 
 <div class="multi-column">
 
-* Archaeology
-* Arts & Crafts
-* Astronomy
-* Athletics
-* Awareness
-* Biology
-* Botany
-* Brawling
-* Chemistry
-* Climbing
-* Connections
-* Deception
-* Demolitions
-* Disguise
-* Driving
-* Economics
-* Empathy
-* Endurance
-* Engineering
-* Etiquette
-* Firearms
-* First Aid
-* Forgery
-* Geology
-* Grappling
-* Gunnery
-* Hacking
-* History
-* Intimidation
-* Jury-Rigging
-* Law & Politics
-* Leadership
-* Linguistics
-* Machinery
-* Mathematics
-* Mechanics
-* Medicine
-* Melee Weapons
-* Performing
-* Persuasion
-* Physics
-* Piloting
-* Psychology
-* Robotics
-* Security
-* Seduction
-* Sleight of Hand
-* Stealth
-* Surgery
-* Survival
-* Technology
-* Theology
-* Throwing
-* Tracking
-* Weight-lifting
+* Archaeology Ⓢ
+* Arts & Crafts Ⓘ
+* Astronomy Ⓢ
+* Athletics Ⓘ
+* Awareness Ⓘ
+* Biology Ⓢ
+* Botany Ⓢ
+* Brawling Ⓘ
+* Chemistry Ⓢ
+* Climbing Ⓘ
+* Composure Ⓘ
+* Connections Ⓘ 
+* Deception Ⓘ
+* Demolitions Ⓢ
+* Disguise Ⓘ
+* Driving Ⓢ
+* Economics Ⓢ
+* Empathy Ⓘ
+* Endurance Ⓘ
+* Engineering Ⓢ
+* Etiquette Ⓘ
+* Firearms Ⓢ
+* First Aid Ⓘ
+* Forgery Ⓢ
+* Geology Ⓢ
+* Grappling Ⓘ
+* Gunnery Ⓢ
+* Hacking Ⓢ
+* History Ⓢ
+* Intimidation Ⓘ
+* Jury-Rigging Ⓘ
+* Law & Politics Ⓢ
+* Leadership Ⓘ
+* Linguistics Ⓢ
+* Machinery Ⓢ
+* Mathematics Ⓢ
+* Mechanics Ⓢ
+* Medicine Ⓢ
+* Melee Weapons Ⓘ
+* Performing Ⓘ
+* Persuasion Ⓘ
+* Physics Ⓢ
+* Piloting Ⓢ
+* Psychology Ⓢ
+* Robotics Ⓢ
+* Security Ⓘ
+* Seduction Ⓘ
+* Sleight of Hand Ⓘ
+* Stealth Ⓘ
+* Surgery Ⓢ
+* Survival Ⓘ
+* Technology Ⓢ
+* Theology Ⓢ
+* Throwing Ⓘ
+* Tracking Ⓘ
+* Weight-lifting Ⓘ
 
 </div>
