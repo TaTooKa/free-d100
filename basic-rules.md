@@ -169,17 +169,22 @@ Whenever a character receives DMG, the controlling player can choose if they wan
 > [!NOTE]
 > Injuries let you soak HP DMG (and thus help avoid dying by falling below 0 HP), but they give penalties and negative modifiers, and [take longer to heal](#injury-recovery).
 
-The exact Injury suffered is determined by the **hit location** where the damage was dealt, the **DMG type**, and the **amount of DMG** received (after subtracting Armor).
+The exact Injury suffered is determined by the **hit location** where the damage was dealt, the **DMG type**, and the **amount of DMG** received (after subtracting Armor). Consult the tables below with that information to get the suffered Injury and its consequences. Note that Injuries (and its detrimental effects) are cumulative.
+
+If you would have to suffer an Injury for a DMG tier you already have, take the immediate higher Injury instead. If this is impossible because you already have the highest Injury, take the next lower one available.
+
+> [!NOTE]
+> **IRP** stands for **Injury Related Penalty**, a negative modifier applied to the Probability % of any roll in which the Injury would hinder the action.
 
 #### Leg Injuries
 
 | DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
 |-----|----------|----------|-------|-------------------|
-| 1-2 | Superficial Calf Puncture | Bleeding Shin Gash | Deep Thigh Bruise | Localized Blistering |
-| 3-4 | Deep Muscle Puncture | Sliced Hamstring | Sprained Ankle | 2nd-Degree Muscle Burn |
-| 5-6 | Lodged Projectile / Embedded Shrapnel | Severed Achilles Tendon | Shattered Kneecap | Armor/Clothing Fused to Skin |
-| 7-8 | Severed Femoral Artery | Amputated Foot | Compound Tibia Fracture | Bone-Deep Necrosis |
-| 9+ | Shattered Femur | Severed Leg | Pulverized Femur | Incinerated Leg |
+| 1-2 | **Superficial Calf Puncture**<br/>(-5% IRP) | Bleeding Shin Gash | Deep Thigh Bruise | Localized Blistering |
+| 3-4 | **Deep Muscle Puncture**<br/>(-10% IRP) | Sliced Hamstring | Sprained Ankle | 2nd-Degree Muscle Burn |
+| 5-6 | **Lodged Projectile / Embedded Shrapnel**<br/>(-10% IRP, and risk of Infection if not treated soon) | Severed Achilles Tendon | Shattered Kneecap | Armor/Clothing Fused to Skin |
+| 7-8 | **Severed Femoral Artery**<br/>(bleeding out; will die in d10 turns unless treated) | Amputated Foot | Compound Tibia Fracture | Bone-Deep Necrosis |
+| 9+ | **Shattered Femur**<br/>(impossible to use leg until treated and recovered) | Severed Leg | Pulverized Femur | Incinerated Leg |
 
 #### Arm Injuries
 
