@@ -70,8 +70,8 @@ A modifier for when a character's silhouette is partially or totally occluded by
 
 | Cover | Modifier |
 |------|------|
-| **Half Cover** | -10% Probability to hit you |
-| **Full Cover** | -20% Probability to hit you |
+| **Half Cover** | -15% Probability to hit you |
+| **Full Cover** | -30% Probability to hit you |
 | **Total Cover** <br/>(as Full Cover but<br/>without peeking out)| Impossible to hit you |
 
 ### Initiative and Rounds
@@ -97,7 +97,7 @@ Armor rating can go from 1 (light) to 6 (heavy). See Gear.
 
 When a character is hit, add the base Weapon DMG to the SLs of the dice roll from the attacker. Then subtract the ARMOR rating in the targeted hit location. The end result is the DMG taken.
 
-Players can decide to soak HP by suffering an [Injury](#injuries) in that hit location, unless the attacker roll resulted in a CRITICAL HIT (then both HP loss and INJURY is caused).
+Players can decide to soak HP by suffering an [Injury](#injuries) in that hit location, unless the attacker roll resulted in a **Critical Hit** (then both [HP loss](#health) and an [Injury](#injuries) is caused).
 
 ### Critical Hits
 A match of tens and units is a CRITICAL. If the action succeeded, both DMG to HP and an INJURY are caused.
@@ -182,9 +182,9 @@ If you would have to suffer an Injury for a DMG tier you already have, take the 
 |-----|----------|----------|-------|-------------------|
 | 1-2 | **Superficial Calf Puncture**<br/>(-5% IRP) | **Bleeding Shin Gash**<br/>(-5% IRP) | **Deep Thigh Bruise**<br/>(-5% IRP) | **Localized Blistering**<br/>(-5% IRP) |
 | 3-4 | **Deep Muscle Puncture**<br/>(-10% IRP) | **Sliced Hamstring**<br/>(-10% IRP, Movement reduced to 2m) | **Sprained Ankle**<br/>(-10% IRP, cannot run) | **2nd-Degree Muscle Burn**<br/>(-10% IRP) |
-| 5-6 | **Lodged Projectile / Embedded Shrapnel**<br/>(-10% IRP, and risk of Infection if not treated soon) | **Severed Achilles Tendon**<br/>(-20% IRP, Movement reduced to 1m) | **Shattered Kneecap**<br/>(-20% IRP, Movement reduced to 1m) | **Armor/Clothing Fused to Skin**<br/>(-10% IRP, take 2 extra DMG if violently removed) |
-| 7-8 | **Severed Femoral Artery**<br/>(bleeding out; will die in d10 turns unless treated) | **Amputated Foot**<br/>(-30% IRP, cannot stand without support, permanent loss) | **Compound Tibia Fracture**<br/>(-30% IRP, impossible to walk, requires surgery) | **Bone-Deep Necrosis**<br/>(-20% IRP, high risk of lethal infection or amputation) |
-| 9+ | **Shattered Femur**<br/>(impossible to use leg until treated and recovered) | **Severed Leg**<br/>(-20% IRP, massive bleeding; will die in d10 turns unless treated) | **Pulverized Femur**<br/>(-20% IRP, Impossible to use leg, instant Fall Prone, excruciating pain) | **Incinerated Leg**<br/>(Limb rendered useless, permanent loss) |
+| 5-6 | **Lodged Projectile / Embedded Shrapnel**<br/>(-10% IRP, and risk of [Infection](#infections) if not treated soon) | **Severed Achilles Tendon**<br/>(-20% IRP, Movement reduced to 1m, [Bleeding Out](#bleeding-out)) | **Shattered Kneecap**<br/>(-20% IRP, Movement reduced to 1m) | **Armor/Clothing Fused to Skin**<br/>(-10% IRP, take 2 extra DMG if violently removed) |
+| 7-8 | **Severed Femoral Artery**<br/>([Severe Bleeding Out](#bleeding-out)) | **Amputated Foot**<br/>(-30% IRP, [Severe Bleeding Out](#bleeding-out), cannot stand without support, permanent loss) | **Compound Tibia Fracture**<br/>(-30% IRP, impossible to walk, requires surgery) | **Bone-Deep Necrosis**<br/>(-20% IRP, high risk of lethal [Infection](#infections) or amputation) |
+| 9+ | **Shattered Femur**<br/>(impossible to use leg until treated and recovered) | **Severed Leg**<br/>(-20% IRP, [Massive Bleeding Out](#bleeding-out)) | **Pulverized Femur**<br/>(-20% IRP, Impossible to use leg, instant Fall Prone, excruciating pain) | **Incinerated Leg**<br/>(Limb rendered useless, permanent loss) |
 
 #### Arm Injuries
 
@@ -192,30 +192,72 @@ If you would have to suffer an Injury for a DMG tier you already have, take the 
 |-----|----------|----------|-------|-------------------|
 | 1-2 | **Grazed Forearm**<br/>(-5% IRP) | **Shallow Forearm Gash**<br/>(-5% IRP) | **Tender Bone Bruise**<br/>(-5% IRP) | **Blistered Hand**<br/>(-5% IRP) |
 | 3-4 | **Deep Bicep Puncture**<br/>(-10% IRP) | **Severed Finger(s)**<br/>(-10% IRP for fine manipulation, drop held item) | **Sprained Wrist**<br/>(-10% IRP, -20% IRP for melee attacks) | **3rd-Degree Burn on Hand**<br/>(-10% IRP, drop held item) |
-| 5-6 | **Punctured Brachial Artery**<br/>(-15% IRP, bleeding out; die in 2d10 turns unless treated) | **Sliced Wrist (Severed Tendons or Artery)**<br/>(Cannot grip, bleeding out; die in 2d10 turns unless treated) | **Dislocated Shoulder**<br/>(-10% IRP, arm unusable until popped back in with a successful Athletics/Medicine check) | **Melted Sleeve Fusing to Flesh**<br/>(-15% IRP, take 2 extra DMG if violently removed) |
-| 7-8 | **Shattered Elbow Joint**<br/>(Arm unusable, must drop anything held) | **Amputated Hand**<br/>(-10% IRP, Permanent loss of hand, heavy bleeding; die in 2d10 turns unless treated) | **Snapped Radius/Ulna**<br/>(Arm unusable, excruciating pain causes -10% to ALL actions) | **Charred Stump**<br/>(-10% IRP, Permanent loss of hand) |
-| 9+ | **Completely Transfixed Shoulder**<br/>(Arm pinned or paralyzed,-30% IRP) | **Severed Arm**<br/>(-20% IRP, massive bleeding; will die in d10 turns unless treated) | **Pulped Arm**<br/>(Limb permanently destroyed, requires amputation) | **Dissolved Arm**<br/>(Permanent loss of arm, massive shock) |
+| 5-6 | **Punctured Brachial Artery**<br/>(-15% IRP, [Severe Bleeding Out](#bleeding-out)) | **Sliced Wrist (Severed Tendons or Artery)**<br/>(Cannot grip, [Bleeding Out](#bleeding-out)) | **Dislocated Shoulder**<br/>(-10% IRP, arm unusable until popped back in with a successful Athletics/Medicine check) | **Melted Sleeve Fusing to Flesh**<br/>(-15% IRP, take 2 extra DMG if violently removed) |
+| 7-8 | **Shattered Elbow Joint**<br/>(Arm unusable, must drop anything held) | **Amputated Hand**<br/>(-10% IRP, Permanent loss of hand, [Severe Bleeding Out](#bleeding-out)) | **Snapped Radius/Ulna**<br/>(Arm unusable, excruciating pain causes -10% to ALL actions) | **Charred Stump**<br/>(-10% IRP, Permanent loss of hand) |
+| 9+ | **Completely Transfixed Shoulder**<br/>(Arm pinned or paralyzed,-30% IRP) | **Severed Arm**<br/>(-20% IRP, [Massive Bleeding Out](#bleeding-out)) | **Pulped Arm**<br/>(Limb permanently destroyed, requires amputation) | **Dissolved Arm**<br/>(Permanent loss of arm, massive shock) |
 
 #### Chest Injuries
 
 | DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
 |-----|----------|----------|-------|-------------------|
 | 1-2 | **Shallow Flesh Puncture**<br/>(-5% IRP on physical exertion) | **Shallow Abdominal Gash**<br/>(-5% IRP) | **Wind Knocked Out**<br/>(Lose your next Action, then -5% IRP) | **Widespread Torso Blistering**<br/>(-5% IRP, cannot wear Armor comfortably) |
-| 3-4 | **Lodged Projectile / Shrapnel in Gut**<br/>(-10% IRP, risk of infection) | **Flayed Torso (Exposed Ribs)**<br/>(-10% IRP, risk of infection) | **Multiple Broken Ribs**<br/>(-10% IRP, taking further DMG requires an *Instinct Check*) | **Melted Armor/Clothes Fusing to Flesh**<br/>(-10% IRP, take 2 extra DMG if violently removed) |
-| 5-6 | **Punctured Lung**<br/>(-20% IRP, cannot run, suffocating) | **Slashed Diaphragm**<br/>(-20% IRP, breathing labored, cannot sprint) | **Collapsed Lung**<br/>(-20% IRP, cannot exert or run) | **3rd-Degree Chest Burns**<br/>(-20% IRP, high risk of infection) |
-| 7-8 | **Pierced Stomach or Bowel**<br/>(-20% IRP, lethal infection in 2 days if untreated) | **Deep Gut Laceration**<br/>(-10% IRP, massive bleeding; die in 2d10 turns unless treated) | **Crushed Sternum**<br/>(-20% IRP, excruciating pain with every breath) | **Scorched Lungs**<br/>(-20% IRP from smoke/fumes, coughing fits, cannot run) |
-| 9+ | **Lodged Projectile / Shrapnel in Spine**<br/>(paralysis below waist; requires surgery) | **Spilled Intestines**<br/>(-20% IRP, Must use 1 hand to physically hold them in) | **Ruptured Spleen**<br/>(-20% IRP, Severe internal bleeding, death in 1d10 hours unless treated) | **Exposed Charred Ribs / Deep Necrosis**<br/>(-20% IRP, cannot use clothing or armor, fatal infection risk) |
+| 3-4 | **Lodged Projectile / Shrapnel in Gut**<br/>(-10% IRP, risk of [Infection](#infections)) | **Flayed Torso (Exposed Ribs)**<br/>(-10% IRP, [Bleeding Out](#bleeding-out), risk of [Infection](#infections)) | **Multiple Broken Ribs**<br/>(-10% IRP, taking further DMG requires an *Instinct Check*) | **Melted Armor/Clothes Fusing to Flesh**<br/>(-10% IRP, take 2 extra DMG if violently removed) |
+| 5-6 | **Punctured Lung**<br/>(-20% IRP, cannot run, suffocating, [Bleeding Out](#bleeding-out)) | **Slashed Diaphragm**<br/>(-20% IRP, breathing labored, cannot sprint) | **Collapsed Lung**<br/>(-20% IRP, cannot exert or run) | **3rd-Degree Chest Burns**<br/>(-20% IRP, high risk of [Infection](#infections)) |
+| 7-8 | **Pierced Stomach or Bowel**<br/>(-20% IRP, [Severe Bleeding Out](#bleeding-out), lethal [Infection](#infections) if untreated) | **Deep Gut Laceration**<br/>(-10% IRP, [Severe Bleeding Out](#bleeding-out)) | **Crushed Sternum**<br/>(-20% IRP, excruciating pain with every breath) | **Scorched Lungs**<br/>(-20% IRP from smoke/fumes, coughing fits, cannot run) |
+| 9+ | **Lodged Projectile / Shrapnel in Spine**<br/>(paralysis below waist; requires surgery) | **Spilled Intestines**<br/>(-20% IRP, [Severe Bleeding Out](#bleeding-out), Must use 1 hand to physically hold them in) | **Ruptured Spleen**<br/>(-20% IRP, [Massive Bleeding Out](#bleeding-out)) | **Exposed Charred Ribs / Deep Necrosis**<br/>(-20% IRP, cannot use clothing or armor, fatal [Infection](#infections) risk) |
 
 #### Head Injuries
 
 | DMG | Piercing | Slashing | Blunt | Burning/Corrosive |
 |-----|----------|----------|-------|-------------------|
 | 1-2 | **Pierced Cheek or Ear**<br/>(-5% IRP on Social/Awareness) | **Scalp Cut**<br/>(-5% IRP, bleeds heavily into eyes blinding temporarily until wiped) | **Bloody Nose and Mild Concussion**<br/>(-5% IRP on Mental actions) | **Blistered Face and Singed Hair**<br/>(-5% IRP) |
-| 3-4 | **Punctured Sinus Cavity**<br/>(-10% IRP on Awareness) | **Deep Facial Laceration**<br/>(-10% IRP, prominent scarring) | **Broken Jaw**<br/>(-10% IRP, cannot speak clearly or Inspire) | **Melted Facial Features**<br/>(-10% IRP, horrific scarring) |
-| 5-6 | **Pierced Eye and Socket**<br/>(Permanent loss of one eye, -20% IRP to visual Awareness/Ranged attacks) | **Sliced Off Ear or Nose**<br/>(-20% IRP to related Awareness, permanent disfigurement) | **Severe Concussion**<br/>(-20% IRP, disorientation and nausea) | **Scorched Airway**<br/>(-20% IRP, requires tracheotomy/tubes to breathe safely) |
-| 7-8 | **Embedded Object in Skull**<br/>(-20% IRP on all Mental actions, chronic migraines) | **Severed Vocal Cords**<br/>(-10% IRP, permanent muteness, cannot speak or Inspire) | **Fractured Skull**<br/>(-30% IRP, make Endurance check to avoid blacking out) | **Melted Corneas**<br/>(Total blindness, impossible to do sight-dependent tasks) |
+| 3-4 | **Punctured Sinus Cavity**<br/>(-10% IRP on Awareness) | **Deep Facial Laceration**<br/>(-10% IRP, prominent scarring, [Bleeding Out](#bleeding-out)) | **Broken Jaw**<br/>(-10% IRP, cannot speak clearly or Inspire) | **Melted Facial Features**<br/>(-10% IRP, horrific scarring) |
+| 5-6 | **Pierced Eye and Socket**<br/>(Permanent loss of one eye, -20% IRP to visual Awareness/Ranged attacks, [Bleeding Out](#bleeding-out)) | **Sliced Off Ear or Nose**<br/>(-20% IRP to related Awareness, permanent disfigurement, risk of [Infection](#infections) if not treated) | **Severe Concussion**<br/>(-20% IRP, disorientation and nausea) | **Scorched Airway**<br/>(-20% IRP, requires tracheotomy/tubes to breathe safely) |
+| 7-8 | **Embedded Object in Skull**<br/>(-20% IRP on all Mental actions, chronic migraines) | **Severed Vocal Cords**<br/>(-10% IRP, permanent muteness, cannot speak or Inspire, [Severe Bleeding Out](#bleeding-out)) | **Fractured Skull**<br/>(-30% IRP, make Endurance check to avoid blacking out) | **Melted Corneas**<br/>(Total blindness, impossible to do sight-dependent tasks) |
 | 9+ | **Transfixed Jaw and Palate**<br/>(Unable to speak or eat normally, requires liquid diet, -20% IRP to Social) | **Flayed Face**<br/>(Extensive nerve damage, terrifying visage, -20% IRP to Social interactions) | **Traumatic Brain Injury**<br/>(-20% IRP, Permanent loss of coordination/memory) | **Charred Scalp with Exposed Skull Bone**<br/>(-20% IRP, permanent disfigurement and vulnerability) |
 
+### Infections
+
+Certain [Injuries](#injuries), when not treated, can cause an **Infection**. 
+
+**Infection Check**: Make an *Endurance* check each hour that passes that the Injury is not [properly treated](#injury-recovery). On each attempt you suffer a penalty of **-5% per hour that passed**. If you use alcohol or other disinfectants to clean the wound, you gain +30% on each Infection Check.
+
+On a Failure, you suffer an **Infection**.
+
+Once the Injury receives [Proper Treatment](#injury-recovery), the Infection Checks are no longer necessary.
+
+> [!NOTE]
+> If you suffer multiple *Injuries* with risk of *Infection*, you must do an **Infection Check** for each of them.
+
+#### Suffering Infections
+
+At the start of each day, reduce your maximum HP by 1 per each Infection you have.
+
+If your maximum HP goes below half of your typical healthy HP value, you suffer the **symptoms of fever and nausea**, which penalize you with -10% to all rolls.
+
+These effects continue until each Infection is healed, and even then they recover gradually over time (see [Healing Infections](#healing-infections)).
+
+If your max HP reaches 0, you fall unconscious with a fever and must go through the "[Uncertain Death](#uncertain-death)" process. If you come back to life, your max HP is restored to normal, but the Infections are still there.
+
+### Bleeding Out
+
+Certain [Injuries](#injuries) can cause a character to bleed dangerously excessively.
+
+**Bleeding Out**: The character will die of blood loss in **3d10 Rounds** if not treated.
+
+**Severe Bleeding Out**: The character will die of blood loss in **2d10 Rounds** if not treated.
+
+**Massive Bleeding Out**: The character will die of blood loss in **1d10 Rounds** if not treated.
+
+#### Treating a bleeding wound
+
+Treating a bleeding wound requires a dice check with a relevant Skill (typically *First Aid* or *Medicine*).
+
+Some bleeding wounds can be plugged or bandaged and that's enough to stop it until the [Injury](#injuries) can be [properly treated](#injury-recovery). 
+
+Others require a suture, tourniquet or other techniques that impose a -10% penalty to the treating check (and the expenditure of proper medical supplies). 
+
+Others (like internal bleeding, severed arteries, and such) might be very hard to stop (-30% penalty), or outright impossible, at GM's discretion.
 
 ### Healing and Resting
 #### Rest
@@ -229,7 +271,7 @@ If you would have to suffer an Injury for a DMG tier you already have, take the 
 start losing HP/day equal to number of days without food/drink.
 
 #### Injury Recovery
-**Injuries** recover a # of hours/days/weeks after **Proper Treatment** has been applied/administered (bandages, sutures, bullet extraction, complex surgery, recovery in bed, etc.):
+**Injuries** recover a # of hours/days/weeks after **Proper Treatment** has been applied/administered (bandages, sutures, bullet extraction, complex surgery, recovery in bed, etc.), which implies a Skill check (typically *First Aid* or *Medicine*) and the expenditure of medical supplies.
 
 | Injury Tier | Recovery Time after **Proper Treatment** |
 |---|---|
@@ -239,17 +281,25 @@ start losing HP/day equal to number of days without food/drink.
 |DMG 7~8 | 1 month |
 |DMG 9+ | 3 months |
 
+#### Healing Infections
+
+Recovering from an **Infection** implies a skill check (typically *First Aid* or *Medicine*) and the expenditure of **disinfectants** and **antibiotics**.
+
+On a Successful Roll and after spending the applied supplies, remove the Infection.
+
+Only when all Infections have been healed, the character begins to recover 1 max HP at the beginning of each day, until reaching their typical max HP.
 
 ### Uncertain Death
 
 When a character’s HP is down to 0 or less, they are K.O’d. roll a d100 inside an obscure cup, face down.
-Reveal it when someone checks the downed character’s vitals:
+Reveal it when someone checks the downed character’s vitals, but first:
 
-* Subtract the character’s current negative HP as increments of -10% from the Probability %
+* Determine the **Probability %** as the character's most relevant Skill to survive the DMG received (typically *Endurance*) 
+* Subtract the character’s current negative HP as increments of -10% from the **Probability %**
 
-If the final result is equal or under their Skill % (the most relevant to survive the DMG received, typically *Endurance*) - the negative HP penalty, they are alive (back with 1 HP).
+If the revealed dice result is equal or under that **Probability %**, the character is **alive** (back with 1 HP).
 
-If it’s higher, they are dead.
+If it’s higher, the character is **dead**.
 
 ## Other Rules
 
@@ -263,14 +313,14 @@ Sometimes a character’s composure is put to the test and they need to do an **
 * Leader taken out or fleeing
 * Exposed to a horror
 
-The character must roll under a relevant Skill % (typically *Composure*). If they fail, they are put in a FIGHT/FLIGHT/FREEZE/FAWN state (at GM discretion, picking the most obvious or detrimental one):
+The character must roll under a relevant Skill % (typically *Composure*). If they fail, they are put in a **FIGHT**/**FLIGHT**/**FREEZE**/**FAWN** state (at GM discretion, picking the most obvious or detrimental one):
 
 * **FIGHT**: lash out violently; attack anyone (friend or foe)
 * **FLIGHT**: Escape ASAP; distance from / block the danger
 * **FREEZE**: Become immobilized; in shock; unable to act 
 * **FAWN**: Surrender; yield; submit to (or ally with) the enemy 
 
-While in this state, they must act accordingly, and any action that would contradict the expected behavior must pass a relevant Skill check to be even allowed to act that way. The effect lasts until the current stressful situation ends.
+While in this state, they must act accordingly, and any action that would contradict the expected behavior must pass a relevant Skill check (typically *Composure*) to be even allowed to act that way. The effect lasts until the current stressful situation ends.
 
 ### Inspire
 
@@ -278,4 +328,4 @@ Anyone can attempt to **Inspire** their allies with a warcry or a morale-boostin
 
 Make a roll with a relevant Skill % (typically *Leadership*, *Persuasion* or *Empathy*). 
 
-On a Success, all of your allies gain **+20%** on their **Instinct Checks** for the remainder of the situation (combat, chase, high action scene, etc), OR they can remove their FIGHT/FLIGHT/FREEZE/FAWN state. On a Critical Success, they get both benefits.
+On a Success, all of your allies gain **+20%** on their **Instinct Checks** for the remainder of the situation (combat, chase, high action scene, etc), OR they can **remove** their **FIGHT**/**FLIGHT**/**FREEZE**/**FAWN** state. On a Critical Success, they get both benefits.
