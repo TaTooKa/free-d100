@@ -90,7 +90,7 @@ Each character uses whatever Skill that is most relevant in the situation (typic
 In a turn, a character can **Move** (up to 5 meters) and do an **Action** (attack, interact, talk, use something, etc). The action can be executed before or after Movement, at player's choice.
 
 ### Armor
-Per hit location. Subtracts from DMG before applying to HP.
+Per [hit location](#hit-locations). Subtracts from DMG before applying to HP.
 Armor rating can go from 1 (light) to 6 (heavy). See Gear.
 
 ### Damage (DMG)
