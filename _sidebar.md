@@ -1,4 +1,4 @@
 - [Home](/)
 - [Basic Rules](basic-rules.md)
-- [Gear](gear.md)
 - [Skills](skills.md)
+- [Gear](gear.md)
