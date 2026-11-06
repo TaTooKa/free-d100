@@ -160,7 +160,14 @@ Armor reduces incoming fire DMG.
 > Putting out a fire gains +30% if using **something helpful** like water, heavy cloth, etc. If using a **fire extinguisher** you automatically succeed with no roll required.
 
 ## Health
-Characters have **Health Points (HP)**, typically starting at 5. At 0 or less, they are **knocked out** and could die (see [Uncertain Death](#uncertain-death)).
+
+Characters have **Health Points (HP)**, that represent their overall health state. At 0 or less, they are **knocked out** and could die (see [Uncertain Death](#uncertain-death)).
+
+A Character's HP is calculated as: **3 + Endurance / 10** (round down)
+
+> [!NOTE]
+> Since *Endurance* is an *Instinctive* (Ⓘ) [Skill](/skills) which has a minimum of 20%, most Characters will have at least 5 HP. Increasing *Endurance* makes the Character more resilient, represented by higher Health Points available.
+
 
 ### Injuries
 
