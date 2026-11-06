@@ -10,7 +10,7 @@ Characters can carry up to 5 items without being hindered.
 
 *Bulky* items take 2 slots. 5 "*small*" items (stackables, bits and bobs) take 1 slot.
 
-Certain "*holders*" like bags, satchels, holsters and the like can increase the default limit.
+Certain "*holders*" like bags, satchels, holsters, etc can increase the default limit.
 
 ### Overencumbered
 
@@ -22,7 +22,7 @@ Certain "*holders*" like bags, satchels, holsters and the like can increase the 
 
 **Base DMG**: The [DMG](/basic-rules#damage-dmg) to add to [SLs](/basic-rules#success-levels) obtained in the attack roll.
 
-**Hands**: whether the weapon can be used one-handed, or two-handed.
+**Hands**: whether the weapon can be used one-handed, or two-handed. Note that every two-handed weapon is *Bulky*.
 
 **Clip size** / **Ammo type**: determines how often you need to [Reload](/basic-rules#ammo-and-reloading) and which type of Ammo it uses.
 
