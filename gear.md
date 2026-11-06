@@ -157,6 +157,8 @@ Examples of armor pieces by Location:
 
 ## Miscellaneous Items
 
+Certain "*holder*" items like backpacks have a **Carried**/**Worn** property. **Carried** means it takes that many Bulk Slots when you are carrying it in your hands or inside another container. **Worn** means you have equipped it and are using it as a container for other items, in which case it adds more Bulk capacity.
+
 | Item Name | Description & Mechanical Effect | Bulk Slots |
 |---|---|---|
 | **Tactical Backpack** | Heavy-duty pack worn on the back. |**Carried**: 2<br/>**Worn**: +5 Bulk Capacity |
