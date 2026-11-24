@@ -91,7 +91,15 @@ In a turn, a character can **Move** (up to 5 meters) and do an **Action** (attac
 
 ### Armor
 Per [hit location](#hit-locations). Subtracts from DMG before applying to HP.
-Armor rating can go from 1 (light) to 6 (heavy). See Gear.
+Armor rating can go from 1 (light) to 6 (heavy). See [Gear](/gear#armor).
+
+#### Degrading Armor
+
+When a character receives a [Critical Hit](#critical-hits) in a [hit location](#hit-locations) that is armored, they can decide to have their armor be damaged instead of taking an [Injury](#injuries).
+
+* A pristine Armor piece that is damaged in this way turns into [Bad Quality Armor](/gear#bad-quality-armor).
+* A **Bad Quality Armor** piece that is damaged in this way is **broken**, unusable until repaired (it doesn't soak DMG anymore).
+
 
 ### Damage (DMG)
 
@@ -118,7 +126,11 @@ Forfeit your Movement on your turn to take aim and choose a desired **hit locati
 
 #### Full Defense
 
-Forfeit your Action on your turn to focus on dodging, blocking and taking cover. Enemies get **-20% to the Probability %** to hit you. If you are wielding a Melee weapon and an enemy attacks you in melee and misses, you **PARRY** (make a free melee attack roll against that enemy as a *reaction*, outside of your turn).
+(Against Ranged and Melee attacks)
+
+Forfeit your Action on your turn to focus on dodging, blocking and taking cover. Enemies get **-20% to the Probability %** to hit you. 
+
+If you are wielding a Melee weapon and an enemy attacks you in melee and misses, you **PARRY** (make a free melee attack roll against that enemy as a *reaction*, outside of your turn). If dual-wielding melee weapons, you have **+10%** in your Parry attack roll.
 
 #### Ammo and Reloading
 

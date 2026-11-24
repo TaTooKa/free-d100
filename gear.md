@@ -6,7 +6,12 @@ This section covers certain rules and item listings for a modern/realistic setti
 
 ### Carrying Capacity
 
-Characters have 5 "Bulk Slots" in which they can carry up to 5 normal items without being hindered.
+Characters have a number of "Bulk Slots" in which they can carry up to that amount of items without being hindered.
+
+a Character's Carrying Capacity is **5 + [ Weight-lifting Ⓘ / 10 ]** (round down)
+
+> [!NOTE]
+> Since *Weight-lifting* Ⓘ is an [Instinctive Skill](/skills), this means that characters will have a minimum **Carrying Capacity** of 7. 
 
 *Bulky* items take 2 slots. 5 "*small*" items (stackables, bits and bobs) take 1 slot.
 
@@ -117,8 +122,6 @@ Each piece can be made of different materials that determine its Armor Rating:
 * **Medium armor** (3-4) is made of hardened leather, strong plastics, thin metal plates, chainmail, etc.
 * **Heavy armor** (5-6) is made of thick or reinforced metal plating.
 
-Each piece of armor takes 1, 2 or 3 slots of [Carrying Capacity](#carrying-capacity), depending on its material/rating.
-
 Examples of armor pieces by Location:
 
 * **Legs**: Trousers, Greaves, Faulds, Boots
@@ -126,7 +129,14 @@ Examples of armor pieces by Location:
 * **Chest**: Vests, Breastplates, Cuirasses, Bandoliers, Jackets
 * **Head**: Helmet, Hat, Mask
 
-**Bad Quality Armor**: -1 Armor.
+### Armor Bulk Cost
+
+Each piece of armor takes 1, 2 or 3 slots of [Carrying Capacity](#carrying-capacity), depending on its material/rating, if being carried.
+
+If *being worn*, consider **its Bulk cost as one less**, because its weight is distributed over your body. 
+
+> [!NOTE]
+> For example, a Medium piece of Armor would take 2 Bulk slots if being carried in a bag, but only 1 if being worn.
 
 ### Armor List
 
@@ -154,6 +164,12 @@ Examples of armor pieces by Location:
 | **Riot Police Shin & Thigh Guards** | Legs | 3 (Medium) | 2 | Strong plastic impact plates |
 | **Tactical Ballistic Greaves** | Legs | 4 (Medium) | 2 | Hardened composites and thin metal plating |
 | **EOD Bomb Suit Trousers** | Legs | 6 (Heavy) | 3 | Thick metal plating over multiple dense fabric layers |
+
+### Bad Quality Armor
+A piece of armor that is worn or was [degraded](/basic-rules#degrading-armor) provides their typical *Armor Rating* -1. 
+
+> [!NOTE]
+> for example, a Regular light helmet with Armor Rating 2 that is in **Bad Quality** would only provide an Armor Rating of 1.
 
 ## Miscellaneous Items
 
