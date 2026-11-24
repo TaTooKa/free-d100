@@ -7,10 +7,7 @@ Roll d% equal or under the **Probability %** (but as high as possible to get mor
 The Probability % is determined by your **[Skill](/skills) %** (and other circumstantial ±% modifiers).
 
 > [!NOTE]
-> dice results read as 00-99 and are never modified (Probability % is); 
-> 
-> Probability % can never be < 1% or > 97%.
-> 
+> dice results read as 00-99 and are never modified (Probability % is).
 
 ### Success Levels
 The *tens* in the dice result determine **Success Levels (SLs)** of the action. The higher, the better. 
@@ -22,7 +19,7 @@ SLs are used for determining "how good" an action result is (SL 0 just means a p
 
 ### Criticals
 
-A match of *tens* and *units* is a **Critical** (either *Success* or *Failure*). It exacerbates the result, for good or ill. In Combat, a CRITICAL SUCCESS causes both HP DMG and an INJURY.
+A match of *tens* and *units* is a **Critical** (either *Success* or *Failure*). It greatly exacerbates the result, for good or ill.
 
 ## Combat Specifics
 
@@ -76,14 +73,21 @@ A modifier for when a character's silhouette is partially or totally occluded by
 
 ### Initiative and Rounds
 
-**Rounds** last 5 seconds.
+**Rounds** last 5 seconds. A tense situation (combat, chase, etc) that needs to be timed is played in Rounds. Each participating character takes a turn on each Round.
 
-**Initiative** is **team-based**: Everyone rolls at the beginning of each Round, but the highest result (in SLs) determines *which side goes first* (the turn order inside the team is left at those players' whims).
+**Initiative** checks are separated between **simplified** and **advanced**. 
 
-Each character uses whatever Skill that is most relevant in the situation (typically *Athletics* or *Awareness*) to determine their reaction time, reflexes, cunning, or preemtiveness.
+#### Simplified Initiative
 
-> [!NOTE]
-> **Tie-Breaks**: Highest successful result wins. Critical Successes trump regular Successes.
+The Simplified method is the one used by default, when the player characters face a single opposing force.
+
+Each player character rolls at the beginning of each round. They can use whatever Skill that is most relevant in the situation (typically *Athletics* or *Awareness*) to determine their reaction time, reflexes, cunning, or preemtiveness. A success means they act before the opposing side. A failure means they get to act after the opponents.
+
+#### Advanced Initiative
+
+This method is best used when there are more than two sides involved in combat, or when the GM deems the situation to be complex enough that everybody (including NPCs) needs a specific turn order.
+
+Each character (both player's and GM-controlled NPCs) roll for Initiative at the beginning of each Round, using whatever Skill is more appropriate (typically *Athletics* or *Awareness*). The SLs determine turn order, from highest to lowest. Ties mean that those characters act simultaneously (their actions are obviously described in turns, but in the fiction they happen at the same time). Critical Successes trump regular successes. Failures mean they act last.
 
 ### Movement and Actions
 
@@ -108,7 +112,7 @@ When a character is hit, add the base Weapon DMG to the SLs of the dice roll fro
 Players can decide to soak HP by suffering an [Injury](#injuries) in that hit location, unless the attacker roll resulted in a **Critical Hit** (then both [HP loss](#health) and an [Injury](#injuries) is caused).
 
 ### Critical Hits
-A match of tens and units is a CRITICAL. If the action succeeded, both DMG to HP and an INJURY are caused.
+A match of tens and units is a CRITICAL. If the action succeeded, both DMG to HP and an INJURY are caused (unless the player decides to [degrade their Armor](#degrading-armor), if available).
 
 ### Other Combat Options
 
