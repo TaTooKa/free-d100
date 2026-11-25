@@ -2,3 +2,10 @@
 - [Basic Rules](basic-rules.md)
 - [Skills](skills.md)
 - [Gear](gear.md)
+- [Character Creation](char-gen.md)
+----
+- [Medieval Fantasy](none)
+- [Atomic Wasteland](none)
+- [Zombie Outbreak](none)
+- [Military Sci-Fi](none)
+- [Modern Space Opera](none)
