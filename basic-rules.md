@@ -1,5 +1,7 @@
 # Basic Rules
 
+These are the core rules of the *Free d100* TTRPG system, assuming a modern, present-day setting. Other implementations and settings are based on, and override the mechanics and procedures listed here.
+
 ## Action Resolution
 
 Roll d% equal or under the **Probability %** (but as high as possible to get more SLs).
