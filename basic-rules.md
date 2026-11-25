@@ -87,7 +87,7 @@ Each player character rolls at the beginning of each round. They can use whateve
 
 This method is best used when there are more than two sides involved in combat, or when the GM deems the situation to be complex enough that everybody (including NPCs) needs a specific turn order.
 
-Each character (both player's and GM-controlled NPCs) roll for Initiative at the beginning of each Round, using whatever Skill is more appropriate (typically *Athletics* or *Awareness*). The SLs determine turn order, from highest to lowest. Ties mean that those characters act simultaneously (their actions are obviously described in turns, but in the fiction they happen at the same time). Critical Successes trump regular successes. Failures mean they act last.
+Each character (both player's and GM-controlled NPCs) roll for Initiative at the beginning of each Round, using whatever Skill is more appropriate (typically *Athletics* or *Awareness*). The SLs determine turn order, from highest to lowest. Ties mean that those characters act simultaneously (their actions are obviously described in turns, but in the fiction they happen at the same time). Critical Successes trump regular successes in ties. Failures mean they act last.
 
 ### Movement and Actions
 
@@ -243,11 +243,9 @@ If you would have to suffer an Injury for a DMG tier you already have, take the 
 
 Certain [Injuries](#injuries), when not treated, can cause an **Infection**. 
 
-**Infection Check**: Make an *Endurance* check each hour that passes that the Injury is not [properly treated](#injury-recovery). On each attempt you suffer a penalty of **-5% per hour that passed**. If you use alcohol or other disinfectants to clean the wound, you gain +30% on each Infection Check.
+**Infection Check**: when an [Injury](#injuries) that carries Infection risk goes a full day without [Proper Treatment](#injury-recovery), make one *Endurance* check. If you use alcohol or other disinfectants to clean the wound, you gain +30% on this check.
 
 On a Failure, you suffer an **Infection**.
-
-Once the Injury receives [Proper Treatment](#injury-recovery), the Infection Checks are no longer necessary.
 
 > [!NOTE]
 > If you suffer multiple *Injuries* with risk of *Infection*, you must do an **Infection Check** for each of them.
@@ -256,21 +254,28 @@ Once the Injury receives [Proper Treatment](#injury-recovery), the Infection Che
 
 At the start of each day, reduce your maximum HP by 1 per each Infection you have.
 
-If your maximum HP goes below half of your typical healthy HP value, you suffer the **symptoms of fever and nausea**, which penalize you with -10% to all rolls.
+##### Effects of an Infection
+
+* If your maximum HP reaches ½ of your typical healthy HP value, you suffer the **symptoms of fever and nausea**, which penalize you with -10% to all rolls.
+* If your maximum HP reaches ¼ of your typical healthy HP value, the infection is spreading: You suffer **Gangrene** in the affected body part (the pain penalizes you with a cumulative -10% to all rolls). 
+* If your maximum HP reaches 0, you suffer **Sepsis** (blood poisoning): fall unconscious with a fever and must go through the "[Uncertain Death](#uncertain-death)" process. If you didn't die, your max HP is goes up to 1, and the Infection still there.
 
 These effects continue until each Infection is healed, and even then they recover gradually over time (see [Healing Infections](#healing-infections)).
-
-If your max HP reaches 0, you fall unconscious with a fever and must go through the "[Uncertain Death](#uncertain-death)" process. If you come back to life, your max HP is restored to normal, but the Infections are still there.
 
 ### Bleeding Out
 
 Certain [Injuries](#injuries) can cause a character to bleed dangerously excessively.
 
-**Bleeding Out**: The character will die of blood loss in **3d10 Rounds** if not treated.
+**Bleeding Out**: The character loses 1 HP per Round.
 
-**Severe Bleeding Out**: The character will die of blood loss in **2d10 Rounds** if not treated.
+**Severe Bleeding Out**: The character loses 2 HP per Round.
 
-**Massive Bleeding Out**: The character will die of blood loss in **1d10 Rounds** if not treated.
+**Massive Bleeding Out**: The character loses 3 HP per Round.
+
+> [!NOTE]
+> If outside Initiative turns, consider a Round to last ~1 minute.
+
+If bleeding from multiple [Injuries](#injuries), the ongoing HP loses are cumulative.
 
 #### Treating a bleeding wound
 
@@ -308,7 +313,7 @@ start losing HP/day equal to number of days without food/drink.
 
 Recovering from an **Infection** implies a skill check (typically *First Aid* or *Medicine*) and the expenditure of **disinfectants** and **antibiotics**.
 
-On a Successful Roll and after spending the applied supplies, remove the Infection.
+On a Successful Roll and after spending the applied supplies, **remove the Infection**. On a Failure, you don't fully heal the Infection, but you **delay its effects**: This one doesn't reduce your max HP by 1 on this particular day.
 
 Only when all Infections have been healed, the character begins to recover 1 max HP at the beginning of each day, until reaching their typical max HP.
 
