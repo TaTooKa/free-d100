@@ -5,7 +5,7 @@
 - [Character Creation](char-gen.md)
 ----
 - [Medieval Fantasy](medieval-fantasy.md)
-- [Atomic Wasteland](none)
-- [Zombie Outbreak](none)
-- [Military Sci-Fi](none)
-- [Modern Space Opera](none)
+- [Atomic Wasteland](atomic-wasteland.md)
+- [Zombie Outbreak](zombie-outbreak.md)
+- [Military Sci-Fi](military-scifi.md)
+- [Modern Space Opera](modern-space-opera.md)
